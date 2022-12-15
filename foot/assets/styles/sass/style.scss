@@ -15,11 +15,19 @@ body
     margin: 0;
     padding: 0;
     
+    .hidden
+    {
+        display: none;
+    }
+    
     & > main
     {
         & > header
         {
-            background: linear-gradient(#313193, #d2232a);
+            background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 20%;
             height: 40vh;
             width: 100vw;
             display: grid;
@@ -36,6 +44,7 @@ body
                     color: white;
                     text-align: center;
                     font-size: 4em;
+                    font-weight: 800;
                     font-family: 'Roboto Mono', monospace;
                 }
                 
@@ -44,6 +53,7 @@ body
                     color: white;
                     text-align: center;
                     font-size: 2.5em;
+                    font-weight: 800;
                     font-family: 'Roboto Mono', monospace;
                     
                 }
@@ -53,6 +63,7 @@ body
                     color: white;
                     text-align: center;
                     font-size: 4em;
+                    font-weight: 800;
                     font-family: 'Roboto Mono', monospace;
                 }
             }
