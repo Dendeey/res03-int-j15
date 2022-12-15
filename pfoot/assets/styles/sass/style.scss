@@ -11,6 +11,7 @@
 #homepage {
     height: 100vh;
     width: 100vw;
+    overflow-x:hidden;
 
     .header1 {
         height: 17vh;
@@ -21,6 +22,7 @@
         background-color: white;
         box-shadow: 0px 5px 5px 0 rgb(48 68 78 / 10%);
         z-index: 100;
+        margin-bottom:5vh;
 
         nav {
             margin: 0;
@@ -117,20 +119,24 @@
         grid-template-row: 1fr 0.2fr;
 
         &>section:first-of-type {
-            background-image: url("https://www.tv5monde.com/programmes/uploads/2017/09/season_heros-du-gazon-les-rtbf2016_826_489.jpeg");
-            background-size: cover;
+            background: url("https://www.tv5monde.com/programmes/uploads/2017/09/season_heros-du-gazon-les-rtbf2016_826_489.jpeg") linear-gradient($blue, $red, $red, $blue, 0.3) ;
+            background-size:cover;
+            width:70vw;
+            padding:20px;
 
             h1 {
                 font-size: 3rem;
                 text-align: center;
                 font-weight: 900;
                 grid-row: 1/2;
+                
             }
         }
 
 
         aside {
             grid-column:2/3;
+            width:20vw;
             
             #nextmatch {
                 box-shadow: 2px 2px 10px #000;
@@ -143,12 +149,17 @@
                     h2 {
                         text-align: center;
                         font-size: 2rem;
+                        background-color:$blue;
+                        color:#fff;
                     }
                 }
 
                 &>section:first-of-type {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                    p{
+                        padding:5px;
+                    }
 
                     section:first-of-type {
                         text-align: center;
@@ -159,6 +170,11 @@
                         text-align: center;
                         align-self: center;
                         justify-self: center;
+                        
+                        a {
+                            text-decoration:none;
+                            color:$red;
+                        }
                     }
 
                     section:last-of-type {
@@ -175,7 +191,7 @@
                         li {
                             text-align: center;
                             border: 1px solid rgba(0, 0, 0, 0.3);
-                            padding: 20px 50px;
+                            padding:15px;
                         }
                     }
                 }
