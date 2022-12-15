@@ -15,5 +15,49 @@ body
     margin: 0;
     padding: 0;
     
+    & > main
+    {
+        & > header
+        {
+            background: linear-gradient(#313193, #d2232a);
+            height: 40vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            section
+            {
+                grid-column: 2 / 3;
+                justify-self: center;
+                align-self: center;
+                
+                h1
+                {
+                    color: white;
+                    text-align: center;
+                    font-size: 4em;
+                    font-family: 'Roboto Mono', monospace;
+                }
+                
+                h2
+                {
+                    color: white;
+                    text-align: center;
+                    font-size: 2.5em;
+                    font-family: 'Roboto Mono', monospace;
+                    
+                }
+                
+                h3
+                {
+                    color: white;
+                    text-align: center;
+                    font-size: 4em;
+                    font-family: 'Roboto Mono', monospace;
+                }
+            }
+        }
+    }
+    
     
 }

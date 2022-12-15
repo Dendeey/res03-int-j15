@@ -22,15 +22,32 @@
     
             figure 
             {
-                justify-self: center;
+                justify-self: start;
                 align-self: center;
-                margin-left: 0;
-                margin-top: 1vh;
+                margin-left: 3vw;
+                display: flex;
+                flex-direction: row;
     
                 img 
                 {
                     width: 5vw;
                     height: 15vh;
+                }
+                
+                p
+                {
+                    font-size: 1.02em;
+                    align-self: center;
+                    padding-left: 3vw;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-family: 'Roboto Mono', monospace;
+                    line-height: 1.8em;
+                    
+                    strong
+                    {
+                        color: #d2232a;
+                    }
                 }
             }
     
@@ -38,6 +55,9 @@
             {
                 align-self: center;
                 justify-self: center;
+                padding-left: 4em;
+                padding-right: 4em;
+                margin-left: -2vw;
                 border-left: 2px solid #313193;
                 border-right: 2px solid #313193;
                 height: 80%;
@@ -77,34 +97,58 @@
                 display: flex;
                 flex-direction: row;
                 justify-self: center;
+                margin-left: -3vw;
                 
                 .a1
                 {
                     text-decoration: none;
-                    font-size: 1.3em;
+                    font-size: 1.5em;
                     color: 	#4267B2;
                 }
                 
                 .a2
                 {
                     text-decoration: none;
-                    font-size: 1.3em;
+                    font-size: 1.5em;
                     color: #1DA1F2;
                 }
                 
                 .a3
                 {
                     text-decoration: none;
-                    font-size: 1.3em;
+                    font-size: 1.5em;
                     background:  -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                }
+                
+                .a1:hover
+                {
+                    background-color: #4267B2;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 2em;
+                }
+                
+                .a2:hover
+                {
+                    background-color: #1DA1F2;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 2em;
+                }
+                
+                .a3:hover
+                {
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 2em;
                 }
     
                 li
                 {
                     align-self: center;
-                    padding: 2em;
+                    padding: 3em;
                 }
             }
         }
