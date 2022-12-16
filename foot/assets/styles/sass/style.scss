@@ -15,5 +15,82 @@ body
     margin: 0;
     padding: 0;
     
+    .hidden
+    {
+        display: none;
+    }
     
+    & > main
+    {
+        & > header
+        {
+            background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 20%;
+            height: 40vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            section
+            {
+                grid-column: 2 / 3;
+                justify-self: center;
+                align-self: center;
+                
+                h1
+                {
+                    color: white;
+                    text-align: center;
+                    font-size: 4em;
+                    font-weight: 800;
+                    font-family: 'Roboto Mono', monospace;
+                }
+            }
+        }
+        
+        & > section
+        {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+            
+            article
+            {
+                grid-column: 2 / 3;
+                justify-self: center;
+                width: 100%;
+                
+                table
+                {
+                    width: 100%;
+                    margin-top: 3em;
+                    
+                    thead
+                    {
+                        padding: 2em;
+                        tr
+                        {
+                            th
+                            {
+                                
+                            }
+                        }
+                    }
+                    
+                    tbody
+                    {
+                        tr
+                        {
+                            td
+                            {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
