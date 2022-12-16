@@ -176,7 +176,7 @@ table {
 }
 @media (min-width: 901px) and (max-width: 1366px) {
   .header1 {
-    height: 18vh;
+    height: 17vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -194,21 +194,37 @@ table {
     grid-template-columns: 1fr 3fr 1fr;
   }
   .header1 nav figure {
-    justify-self: center;
+    justify-self: start;
     align-self: center;
-    margin-left: 0;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
   }
   .header1 nav figure img {
-    width: 6vw;
-    height: 17vh;
+    width: 5vw;
+    height: 15vh;
+  }
+  .header1 nav figure p {
+    font-size: 0.8em;
+    align-self: center;
+    padding-left: 2.5vw;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.8em;
+    color: #313193;
+  }
+  .header1 nav figure p strong {
+    color: #d2232a;
   }
   .header1 nav ul:first-of-type {
     align-self: center;
     justify-self: center;
+    padding-left: 3em;
+    padding-right: 3em;
     border-left: 2px solid #313193;
     border-right: 2px solid #313193;
     height: 80%;
-    margin-left: -5vw;
   }
   .header1 nav ul:first-of-type a {
     text-decoration: none;
@@ -217,49 +233,66 @@ table {
   .header1 nav ul:first-of-type a:hover {
     color: white;
     background-color: #313193;
-    padding: 1.8em 1em 1.8em 1em;
+    padding: 2em 1em 2em 1em;
   }
   .header1 nav ul:first-of-type li {
     display: inline-block;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     margin-top: 5.5vh;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
   }
+  .header1 nav ul:first-of-type li span {
+    padding-right: 1vw;
+  }
   .header1 nav ul:last-of-type {
     align-self: center;
-    margin-right: 5vw;
-    padding-right: 1em;
-    padding-left: 1em;
     height: 80%;
     border-left: 2px solid #d2232a;
     border-right: 2px solid #d2232a;
     display: flex;
     flex-direction: row;
     justify-self: center;
+    margin-left: -3vw;
   }
   .header1 nav ul:last-of-type .a1 {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #4267B2;
   }
   .header1 nav ul:last-of-type .a2 {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #1DA1F2;
   }
   .header1 nav ul:last-of-type .a3 {
     text-decoration: none;
-    font-size: 1.3em;
-    background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 1.2em;
+    color: #F56040;
+  }
+  .header1 nav ul:last-of-type .a1:hover {
+    background-color: #4267B2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  .header1 nav ul:last-of-type .a2:hover {
+    background: #1DA1F2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  .header1 nav ul:last-of-type .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
   }
   .header1 nav ul:last-of-type li {
     align-self: center;
-    padding: 1.5em;
+    padding: 2.5em;
   }
 }
 html {
@@ -364,7 +397,7 @@ body > main > section:first-of-type table tbody tr:not(.main-tr) td {
   padding-top: 0.9em;
   color: #393941;
 }
-body > main > section:nth-of-type(2) header {
+body > main > section:nth-of-type(2) > header {
   background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -374,17 +407,71 @@ body > main > section:nth-of-type(2) header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-body > main > section:nth-of-type(2) header section {
+body > main > section:nth-of-type(2) > header section {
   grid-column: 2/3;
   justify-self: center;
   align-self: center;
 }
-body > main > section:nth-of-type(2) header section h1 {
+body > main > section:nth-of-type(2) > header section h1 {
   color: white;
   text-align: center;
   font-size: 4em;
   font-weight: 800;
   font-family: "Roboto Mono", monospace;
+}
+body > main > section:nth-of-type(2) article {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.3fr;
+}
+body > main > section:nth-of-type(2) article ul {
+  grid-column: 2/3;
+}
+body > main > section:nth-of-type(2) article ul header {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  margin-top: 2em;
+  background-color: #d2232a;
+  height: 5vh;
+}
+body > main > section:nth-of-type(2) article ul header ul {
+  justify-self: center;
+  align-self: center;
+}
+body > main > section:nth-of-type(2) article ul header ul li {
+  display: inline-block;
+  padding-left: 3vw;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+}
+body > main > section:nth-of-type(2) article ul li article {
+  background-color: #CFCFCF;
+  display: grid;
+  grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
+  height: 20vh;
+}
+body > main > section:nth-of-type(2) article ul li article figure {
+  align-self: center;
+  justify-self: center;
+}
+body > main > section:nth-of-type(2) article ul li article figure img {
+  width: 5vw;
+  height: 12vh;
+}
+body > main > section:nth-of-type(2) article ul li article figure p {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+body > main > section:nth-of-type(2) article ul li article p {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+body > main > section:nth-of-type(2) article ul li article section {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
