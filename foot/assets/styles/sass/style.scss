@@ -145,12 +145,12 @@ body
         
         & > section:nth-of-type(2)
         {
-            header
+            & > header
             {
-                background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
+                background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://static.wixstatic.com/media/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-position: 50% 20%;
+                background-position: 50% 90%;
                 height: 40vh;
                 width: 100vw;
                 display: grid;
@@ -175,56 +175,133 @@ body
             
             article
             {
-                header
-                {
-                    ul
-                    {
-                        li
-                        {
-                            
-                        }
-                    }
-                }
+                display: grid;
+                grid-template-columns: 0.3fr 1fr 0.3fr;
                 
                 ul
                 {
+                    grid-column: 2 / 3;
+                    
+                    header
+                    {
+                        display: grid;
+                        grid-template-columns: 0.1fr 1fr 0.1fr;
+                        margin-top: 2em;
+                        margin-bottom: 0.8em;
+                        background-color: #d2232a;
+                        height: 6vh;
+                        
+                        ul
+                        {
+                            justify-self: start;
+                            align-self: center;
+                            
+                            li
+                            {
+                                display: inline-block;
+                                color: white;
+                                font-size: 1.2em;
+                                font-family: 'Roboto Condensed', sans-serif;
+                                font-weight: 600;
+                            }
+                            
+                            span
+                            {
+                                padding-right: 2vw;
+                                padding-left: 2vw;
+                            }
+                        }
+                    }
+                    
                     li
                     {
                         article
                         {
+                            background-color: #CFCFCF;
+                            display: grid;
+                            grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
+                            height: 20vh;
+                            
                             figure
                             {
+                                align-self: center;
+                                justify-self: center;
+                                
                                 img
                                 {
-                                    
+                                    width: 5vw;
+                                    height: 12vh;
                                 }
                                 
                                 p
                                 {
-                                    
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    color: black;
+                                    margin-top: 1.5vh;
                                 }
                             }
                             
-                            p
+                            & > p:first-of-type
                             {
+                                font-size: 3em;
+                                font-weight: 400;
+                                text-align: center;
+                                color: #13671B;
+                                justify-self: center;
+                                align-self: center;
+                                background-color: white;
+                                border-radius: 4px;
+                                padding: 0.2em;
+                                
+                            }
+                            
+                            & > p:last-of-type
+                            {
+                                font-size: 3em;
+                                font-weight: 400;
+                                text-align: center;
+                                color: #B20A0A;
+                                justify-self: center;
+                                align-self: center;
+                                background-color: white;
+                                border-radius: 4px;
+                                padding: 0.2em;
                                 
                             }
                             
                             section
                             {
+                                justify-self: center;
+                                align-self: center;
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 1vh;
+                                
                                 h4
                                 {
-                                    
+                                    text-align: center;
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                    color: black;
                                 }
                                 
                                 h5
                                 {
+                                    text-align: center;
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                    color: black;
                                     
                                 }
                                 
                                 h6
                                 {
-                                    
+                                    text-align: center;
+                                    font-size: 1.2em;
+                                    font-weight: 600;
+                                    color: black;
                                 }
                             }
                         }
