@@ -149,9 +149,7 @@ table {
   .header1 nav ul:last-of-type .a3 {
     text-decoration: none;
     font-size: 1.5em;
-    background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #F56040;
   }
   .header1 nav ul:last-of-type .a1:hover {
     background-color: #4267B2;
@@ -160,12 +158,13 @@ table {
     border-radius: 2em;
   }
   .header1 nav ul:last-of-type .a2:hover {
-    background-color: #1DA1F2;
+    background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
   .header1 nav ul:last-of-type .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
@@ -300,19 +299,22 @@ body > main > header section h1 {
   font-weight: 800;
   font-family: "Roboto Mono", monospace;
 }
-body > main > header section h2 {
-  color: white;
-  text-align: center;
-  font-size: 2.5em;
-  font-weight: 800;
-  font-family: "Roboto Mono", monospace;
+body > main > section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
 }
-body > main > header section h3 {
-  color: white;
-  text-align: center;
-  font-size: 4em;
-  font-weight: 800;
-  font-family: "Roboto Mono", monospace;
+body > main > section article {
+  grid-column: 2/3;
+  justify-self: center;
+  width: 100%;
+}
+body > main > section article table {
+  width: 100%;
+  margin-top: 3em;
+}
+body > main > section article table thead {
+  padding: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

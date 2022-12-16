@@ -47,28 +47,50 @@ body
                     font-weight: 800;
                     font-family: 'Roboto Mono', monospace;
                 }
+            }
+        }
+        
+        & > section
+        {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.2fr 1fr 0.2fr;
+            
+            article
+            {
+                grid-column: 2 / 3;
+                justify-self: center;
+                width: 100%;
                 
-                h2
+                table
                 {
-                    color: white;
-                    text-align: center;
-                    font-size: 2.5em;
-                    font-weight: 800;
-                    font-family: 'Roboto Mono', monospace;
+                    width: 100%;
+                    margin-top: 3em;
                     
-                }
-                
-                h3
-                {
-                    color: white;
-                    text-align: center;
-                    font-size: 4em;
-                    font-weight: 800;
-                    font-family: 'Roboto Mono', monospace;
+                    thead
+                    {
+                        padding: 2em;
+                        tr
+                        {
+                            th
+                            {
+                                
+                            }
+                        }
+                    }
+                    
+                    tbody
+                    {
+                        tr
+                        {
+                            td
+                            {
+                                
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-    
-    
 }

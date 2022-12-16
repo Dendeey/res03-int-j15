@@ -123,9 +123,7 @@
                 {
                     text-decoration: none;
                     font-size: 1.5em;
-                    background:  -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: #F56040;
                 }
                 
                 .a1:hover
@@ -138,7 +136,7 @@
                 
                 .a2:hover
                 {
-                    background-color: #1DA1F2;
+                    background: #1DA1F2;
                     color: white;
                     padding: 0.5em;
                     border-radius: 2em;
@@ -146,6 +144,7 @@
                 
                 .a3:hover
                 {
+                    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
                     color: white;
                     padding: 0.5em;
                     border-radius: 2em;
