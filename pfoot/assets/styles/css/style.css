@@ -140,9 +140,7 @@ table {
 #homepage .header1 nav ul:last-of-type .a3 {
   text-decoration: none;
   font-size: 1.5em;
-  background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #F56040;
 }
 #homepage .header1 nav ul:last-of-type .a1:hover {
   background-color: #4267B2;
@@ -151,12 +149,13 @@ table {
   border-radius: 2em;
 }
 #homepage .header1 nav ul:last-of-type .a2:hover {
-  background-color: #1DA1F2;
+  background: #1DA1F2;
   color: white;
   padding: 0.5em;
   border-radius: 2em;
 }
 #homepage .header1 nav ul:last-of-type .a3:hover {
+  background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
   color: white;
   padding: 0.5em;
   border-radius: 2em;
@@ -186,12 +185,25 @@ table {
   justify-self: center;
   align-self: center;
 }
-#homepage > main > header h1 {
-  font-size: 3rem;
+#homepage > main > header h2 {
+  font-size: 8rem;
   text-align: center;
   font-weight: 900;
   grid-row: 1/2;
   color: #fff;
+}
+#homepage > main > section:first-of-type {
+  text-align: center;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+#homepage > main > section:first-of-type h2 {
+  font-size: 3rem;
+  color: #313193;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d2232a;
+  text-shadow: 5px 2px 5px black;
 }
 #homepage > main > section:nth-of-type(2) {
   display: grid;
@@ -237,9 +249,18 @@ table {
   align-self: center;
   justify-self: center;
 }
-#homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) a {
+#homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button {
   text-decoration: none;
-  color: #d2232a;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  background-color: #d2232a;
+  cursor: pointer;
+}
+#homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button:hover {
+  background-color: #A70000;
+  box-shadow: 2px 2px 15px #313193;
 }
 #homepage > main #nextmatch > section:first-of-type section:last-of-type {
   text-align: center;
@@ -263,11 +284,15 @@ table {
   border-radius: 10px;
   background-color: #fff;
 }
+#homepage > main #classement a {
+  text-decoration: none;
+  color: #fff;
+}
 #homepage > main #classement table {
   width: 100%;
   height: 100%;
   padding: 20px;
-  background-color: rgba(49, 49, 147, 0.4);
+  background: rgba(49, 49, 147, 0.4);
 }
 #homepage > main #classement table thead th {
   background-color: #313193;
@@ -320,6 +345,7 @@ table {
 }
 #homepage .darkfoot #contain span {
   color: #fff;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
