@@ -63,6 +63,7 @@
                 border-right: 2px solid #313193;
                 height: 80%;
                 
+                
                 a
                 {
                     text-decoration: none;
@@ -75,6 +76,7 @@
                     background-color: #313193;
                     padding: 2em 1em 2em 1em;
                     
+                    
                 }
     
                 li 
@@ -86,6 +88,7 @@
                     font-size: 1.5em;
                     font-family: 'Roboto Mono', monospace;
                     font-weight: bold;
+                    
                     
                     span
                     {
@@ -123,9 +126,7 @@
                 {
                     text-decoration: none;
                     font-size: 1.5em;
-                    background:  -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: #F56040;
                 }
                 
                 .a1:hover
@@ -138,7 +139,7 @@
                 
                 .a2:hover
                 {
-                    background-color: #1DA1F2;
+                    background: #1DA1F2;
                     color: white;
                     padding: 0.5em;
                     border-radius: 2em;
@@ -146,6 +147,7 @@
                 
                 .a3:hover
                 {
+                    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
                     color: white;
                     padding: 0.5em;
                     border-radius: 2em;
@@ -165,7 +167,7 @@
 {
     .header1
     {
-        height: 18vh;
+        height: 17vh;
         width: 100vw;
         margin: 0;
         padding: 0;
@@ -185,15 +187,33 @@
     
             figure 
             {
-                justify-self: center;
+                justify-self: start;
                 align-self: center;
-                margin-left: 0;
-                
+                margin-left: 3vw;
+                display: flex;
+                flex-direction: row;
     
                 img 
                 {
-                    width: 6vw;
-                    height: 17vh;
+                    width: 5vw;
+                    height: 15vh;
+                }
+                
+                p
+                {
+                    font-size: 0.8em;
+                    align-self: center;
+                    padding-left: 2.5vw;
+                    font-style: italic;
+                    font-weight: bold;
+                    font-family: 'Roboto Mono', monospace;
+                    line-height: 1.8em;
+                    color: #313193;
+                    
+                    strong
+                    {
+                        color: #d2232a;
+                    }
                 }
             }
     
@@ -201,10 +221,12 @@
             {
                 align-self: center;
                 justify-self: center;
+                padding-left: 3em;
+                padding-right: 3em;
                 border-left: 2px solid #313193;
                 border-right: 2px solid #313193;
                 height: 80%;
-                margin-left: -5vw;
+                
                 
                 a
                 {
@@ -216,62 +238,89 @@
                 {
                     color: white;
                     background-color: #313193;
-                    padding: 1.8em 1em 1.8em 1em;
+                    padding: 2em 1em 2em 1em;
+                    
                     
                 }
     
                 li 
                 {
                     display: inline-block;
-                    padding-left: 3vw;
-                    padding-right: 3vw;
+                    padding-left: 2.5vw;
+                    padding-right: 2.5vw;
                     margin-top: 5.5vh;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     font-family: 'Roboto Mono', monospace;
                     font-weight: bold;
+                    
+                    
+                    span
+                    {
+                        padding-right: 1vw;
+                    }
                 }
             }
     
             ul:last-of-type 
             {
-                align-self: center;    
-                margin-right: 5vw;
-                padding-right: 1em;
-                padding-left: 1em;
+                align-self: center;
                 height: 80%;
                 border-left: 2px solid #d2232a;
                 border-right: 2px solid #d2232a;
                 display: flex;
                 flex-direction: row;
                 justify-self: center;
+                margin-left: -3vw;
                 
                 .a1
                 {
                     text-decoration: none;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     color: 	#4267B2;
                 }
                 
                 .a2
                 {
                     text-decoration: none;
-                    font-size: 1.3em;
+                    font-size: 1.2em;
                     color: #1DA1F2;
                 }
                 
                 .a3
                 {
                     text-decoration: none;
-                    font-size: 1.3em;
-                    background:  -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    font-size: 1.2em;
+                    color: #F56040;
+                }
+                
+                .a1:hover
+                {
+                    background-color: #4267B2;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 2em;
+                }
+                
+                .a2:hover
+                {
+                    background: #1DA1F2;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 2em;
+                }
+                
+                .a3:hover
+                {
+                    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 2em;
                 }
     
                 li
                 {
                     align-self: center;
-                    padding: 1.5em;
+                    padding: 2.5em;
                 }
             }
         }

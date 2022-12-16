@@ -44,7 +44,7 @@ table {
   width: 100vw;
   overflow-x: hidden;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 3fr 1fr;
 }
 #homepage .header1 {
   height: 17vh;
@@ -263,7 +263,7 @@ table {
   border-radius: 10px;
   padding: 20px;
   color: #fff;
-  background-color: #d2232a;
+  background: #d2232a;
   cursor: pointer;
 }
 #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button:hover {
@@ -314,9 +314,51 @@ table {
 #homepage > main #classement table tbody #rfc {
   background-color: yellow;
 }
-#homepage > main #actus ul li article {
-  border-radius: 15px;
-  box-shadow: 1px 1px 5px black;
+#homepage > main #actus {
+  margin: 5vh;
+}
+#homepage > main #actus > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#homepage > main #actus > ul > li > article {
+  border-radius: 5px;
+  border: 2px solid rgba(49, 49, 147, 0.5);
+  width: 30vw;
+  display: grid;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr;
+}
+#homepage > main #actus > ul > li > article section {
+  padding: 15px;
+}
+#homepage > main #actus > ul > li > article section h3 {
+  font-size: 2rem;
+  color: #313193;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #d2232a;
+  text-shadow: 5px 2px 5px black;
+}
+#homepage > main #actus > ul > li > article form fieldset {
+  margin: 10px;
+}
+#homepage > main #actus > ul > li > article footer {
+  text-align: center;
+}
+#homepage > main #actus > ul > li > article button {
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  background-color: #313193;
+  cursor: pointer;
+}
+#homepage > main #actus > ul > li > article button:hover {
+  background-color: #fff;
+  box-shadow: 2px 2px 15px #d2232a;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
