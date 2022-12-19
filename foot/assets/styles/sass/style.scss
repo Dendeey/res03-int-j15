@@ -1,5 +1,6 @@
 @import "reset";
 @import "nav";
+@import "vars";
 
 html
 {
@@ -418,9 +419,7 @@ body
             
             article
             {
-                padding-left: 10em;
-                padding-right: 10em;
-                padding-top: 3em;
+                padding: 3em 10em 3em 10em;
                 margin-top: 20vh;
                 
                 h5
@@ -447,8 +446,99 @@ body
         }
     }
     
-    & > footer
+    & > footer 
     {
-        
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        background: $blue;
+
+        & > section:first-of-type 
+        {
+            grid-column: 2/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        & > section:nth-of-type(2) 
+        {
+            grid-column: 3/5;
+            display: grid;
+            grid-template-rows: 0.8fr 0.8fr 0.2fr;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+            .a1 
+            {
+                text-decoration: none;
+                font-size: 2em;
+                color: #fff;
+            }
+
+            .a2 
+            {
+                text-decoration: none;
+                font-size: 2em;
+                color: #1DA1F2;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+            }
+
+            .a3 
+            {
+                text-decoration: none;
+                font-size: 2em;
+                color: #F56040;
+            }
+
+            .a1:hover 
+            {
+                background-color: #4267B2;
+                color: white;
+                padding: 0.5em;
+                border-radius: 2em;
+            }
+
+            .a2:hover 
+            {
+                background: #1DA1F2;
+                color: white;
+                padding: 0.5em;
+                border-radius: 2em;
+               
+            }
+
+            .a3:hover 
+            {
+                background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+                color: white;
+                padding: 0.5em;
+                border-radius: 2em;
+                
+            }
+            
+            ul 
+            {
+                li 
+                {
+                    display: inline-block;
+                }
+            }
+
+            h2 
+            {
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        &>section:last-of-type 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
