@@ -638,22 +638,2793 @@ table {
     padding: 3em;
   }
 }
-@media (min-width: 1441px) {
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  #homepage {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  #homepage > main {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Garamond", serif;
+    grid-row: 2/3;
+  }
+  #homepage > main > header {
+    background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.5)), url("https://www.tv5monde.com/programmes/uploads/2017/09/season_heros-du-gazon-les-rtbf2016_826_489.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+    height: 50vh;
+    width: 100vw;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 7vh;
+  }
+  #homepage > main > header section {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  #homepage > main > header h2 {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 900;
+    grid-row: 1/2;
+    color: #fff;
+  }
+  #homepage > main > section:first-of-type {
+    text-align: center;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  #homepage > main > section:first-of-type h2 {
+    font-size: 3rem;
+    color: #313193;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2232a;
+    text-shadow: 5px 2px 5px black;
+  }
+  #homepage > main > section:first-of-type p {
+    margin: 15px;
+    line-height: 2;
+  }
+  #homepage > main > section:nth-of-type(2) {
+    column-gap: 2rem;
+  }
+  #homepage > main > section:nth-of-type(2) h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #homepage > main #nextmatch {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 147, 0.4);
+    width: 100vw;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  #homepage > main #nextmatch header h2 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #313193;
+    color: #fff;
+  }
+  #homepage > main #nextmatch > section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #homepage > main #nextmatch > section:first-of-type p {
+    padding: 5px;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:first-of-type {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:first-of-type figure img {
+    width: 40%;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background: #d2232a;
+    cursor: pointer;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:last-of-type {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:last-of-type figure img {
+    width: 40%;
+  }
+  #homepage > main #nextmatch > footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #homepage > main #nextmatch > footer ul li {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+  #homepage > main #classement {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  #homepage > main #classement a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #homepage > main #classement table {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(49, 49, 147, 0.4);
+  }
+  #homepage > main #classement table thead th {
+    background-color: #313193;
+    font-size: 2rem;
+    color: #fff;
+  }
+  #homepage > main #classement table tbody tr:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  #homepage > main #classement table tbody #rfc {
+    background-color: yellow;
+  }
+  #homepage > main #actus > ul > li > article {
+    border-radius: 5px;
+    border: 2px solid rgba(49, 49, 147, 0.5);
+    width: 100vw;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  }
+  #homepage > main #actus > ul > li > article section {
+    padding: 15px;
+  }
+  #homepage > main #actus > ul > li > article section h3 {
+    font-size: 2rem;
+    color: #313193;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2232a;
+    text-shadow: 5px 2px 5px black;
+  }
+  #homepage > main #actus > ul > li > article form fieldset {
+    margin: 10px;
+  }
+  #homepage > main #actus > ul > li > article footer {
+    text-align: center;
+  }
+  #homepage > main #actus > ul > li > article button {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #313193;
+    cursor: pointer;
+  }
+  #homepage > main #actus > ul > li > article button:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #d2232a;
+    color: #000;
+  }
+  #homepage > main #actus > ul > li > article a {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #313193;
+    cursor: pointer;
+  }
+  #homepage > main #actus > ul > li > article a:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #d2232a;
+    color: #000;
+  }
+  #homepage > footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #313193;
+    width: 100vw;
+  }
+  #homepage > footer > section:first-of-type {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #homepage > footer > section:nth-of-type(2) {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 0.8fr 0.8fr 0.2fr;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  #homepage > footer > section:nth-of-type(2) .a1 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+  }
+  #homepage > footer > section:nth-of-type(2) .a2 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #1DA1F2;
+  }
+  #homepage > footer > section:nth-of-type(2) .a3 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #F56040;
+  }
+  #homepage > footer > section:nth-of-type(2) .a1:hover {
+    background-color: #4267B2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) .a2:hover {
+    background: #1DA1F2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) ul li {
+    display: inline-block;
+  }
+  #homepage > footer > section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  #homepage > footer > section:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 427px) and (max-width: 768px) {
+  #homepage {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  #homepage > main {
+    min-height: 100vh;
+    width: 100vw;
+    margin: auto;
+    font-family: "Garamond", serif;
+    grid-row: 2/3;
+  }
+  #homepage > main > header {
+    background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.5)), url("https://www.tv5monde.com/programmes/uploads/2017/09/season_heros-du-gazon-les-rtbf2016_826_489.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+    height: 50vh;
+    width: 100vw;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #homepage > main > header section {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  #homepage > main > header section h2 {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 900;
+    grid-row: 1/2;
+    color: #fff;
+  }
+  #homepage > main > section:first-of-type {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  #homepage > main > section:first-of-type h2 {
+    font-size: 3rem;
+    color: #313193;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2232a;
+    text-shadow: 5px 2px 5px black;
+  }
+  #homepage > main > section:first-of-type p {
+    margin: 15px;
+    line-height: 2;
+  }
+  #homepage > main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.7rem;
+    margin-bottom: 20px;
+  }
+  #homepage > main > section:nth-of-type(2) h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #homepage > main #nextmatch {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 147, 0.4);
+    width: 45vw;
+    margin: 0;
+    padding: 0;
+  }
+  #homepage > main #nextmatch header h2 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #313193;
+    color: #fff;
+  }
+  #homepage > main #nextmatch > section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #homepage > main #nextmatch > section:first-of-type p {
+    padding: 5px;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:first-of-type {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:first-of-type figure img {
+    width: 40%;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background: #d2232a;
+    cursor: pointer;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button:hover {
+    background-color: #A70000;
+    box-shadow: 2px 2px 15px #313193;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:last-of-type {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:last-of-type figure img {
+    width: 40%;
+  }
+  #homepage > main #nextmatch > footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #homepage > main #nextmatch > footer ul li {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+  #homepage > main #classement {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 50vw;
+  }
+  #homepage > main #classement a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #homepage > main #classement table {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(49, 49, 147, 0.4);
+  }
+  #homepage > main #classement table thead th {
+    background-color: #313193;
+    font-size: 2rem;
+    color: #fff;
+  }
+  #homepage > main #classement table tbody tr:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  #homepage > main #classement table tbody #rfc {
+    background-color: yellow;
+  }
+  #homepage > main #actus > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #homepage > main #actus > ul > li > article {
+    border-radius: 5px;
+    border: 2px solid rgba(49, 49, 147, 0.5);
+    width: 45vw;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  }
+  #homepage > main #actus > ul > li > article section {
+    padding: 15px;
+  }
+  #homepage > main #actus > ul > li > article section h3 {
+    font-size: 2rem;
+    color: #313193;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2232a;
+    text-shadow: 5px 2px 5px black;
+  }
+  #homepage > main #actus > ul > li > article form fieldset {
+    margin: 10px;
+  }
+  #homepage > main #actus > ul > li > article footer {
+    text-align: center;
+  }
+  #homepage > main #actus > ul > li > article button {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #313193;
+    cursor: pointer;
+  }
+  #homepage > main #actus > ul > li > article button:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #d2232a;
+    color: #000;
+  }
+  #homepage > main #actus > ul > li > article a {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #313193;
+    cursor: pointer;
+  }
+  #homepage > main #actus > ul > li > article a:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #d2232a;
+    color: #000;
+  }
+  #homepage > footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: #313193;
+  }
+  #homepage > footer > section:first-of-type {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #homepage > footer > section:nth-of-type(2) {
+    grid-column: 3/5;
+    display: grid;
+    grid-template-rows: 0.8fr 0.8fr 0.2fr;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  #homepage > footer > section:nth-of-type(2) .a1 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+  }
+  #homepage > footer > section:nth-of-type(2) .a2 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #1DA1F2;
+  }
+  #homepage > footer > section:nth-of-type(2) .a3 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #F56040;
+  }
+  #homepage > footer > section:nth-of-type(2) .a1:hover {
+    background-color: #4267B2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) .a2:hover {
+    background: #1DA1F2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) ul li {
+    display: inline-block;
+  }
+  #homepage > footer > section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  #homepage > footer > section:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 769px) {
+  #homepage {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  #homepage > main {
+    min-height: 100vh;
+    width: 100vw;
+    margin: auto;
+    font-family: "Garamond", serif;
+    grid-row: 2/3;
+  }
+  #homepage > main > header {
+    background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.5)), url("https://www.tv5monde.com/programmes/uploads/2017/09/season_heros-du-gazon-les-rtbf2016_826_489.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+    height: 50vh;
+    width: 100vw;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #homepage > main > header section {
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
+  }
+  #homepage > main > header h2 {
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 900;
+    grid-row: 1/2;
+    color: #fff;
+  }
+  #homepage > main > section:first-of-type {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+  #homepage > main > section:first-of-type h2 {
+    font-size: 3rem;
+    color: #313193;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2232a;
+    text-shadow: 5px 2px 5px black;
+  }
+  #homepage > main > section:first-of-type p {
+    margin: 15px;
+    line-height: 2;
+  }
+  #homepage > main > section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin: 0 5vw;
+  }
+  #homepage > main > section:nth-of-type(2) h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #homepage > main #nextmatch {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    background-color: rgba(49, 49, 147, 0.4);
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+  }
+  #homepage > main #nextmatch header h2 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #313193;
+    color: #fff;
+  }
+  #homepage > main #nextmatch > section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #homepage > main #nextmatch > section:first-of-type p {
+    padding: 5px;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:first-of-type {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:first-of-type figure img {
+    width: 40%;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background: #d2232a;
+    cursor: pointer;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:nth-of-type(2) button:hover {
+    background-color: #A70000;
+    box-shadow: 2px 2px 15px #313193;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:last-of-type {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  #homepage > main #nextmatch > section:first-of-type section:last-of-type figure img {
+    width: 40%;
+  }
+  #homepage > main #nextmatch > footer ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #homepage > main #nextmatch > footer ul li {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+  }
+  #homepage > main #classement {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  #homepage > main #classement a {
+    text-decoration: none;
+    color: #fff;
+  }
+  #homepage > main #classement table {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(49, 49, 147, 0.4);
+  }
+  #homepage > main #classement table thead th {
+    background-color: #313193;
+    font-size: 2rem;
+    color: #fff;
+  }
+  #homepage > main #classement table tbody tr:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  #homepage > main #classement table tbody #rfc {
+    background-color: yellow;
+  }
+  #homepage > main #actus {
+    margin: 5vh;
+  }
+  #homepage > main #actus > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #homepage > main #actus > ul > li > article {
+    border-radius: 5px;
+    border: 2px solid rgba(49, 49, 147, 0.5);
+    width: 30vw;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  }
+  #homepage > main #actus > ul > li > article section {
+    padding: 15px;
+  }
+  #homepage > main #actus > ul > li > article section h3 {
+    font-size: 2rem;
+    color: #313193;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d2232a;
+    text-shadow: 5px 2px 5px black;
+  }
+  #homepage > main #actus > ul > li > article form fieldset {
+    margin: 10px;
+  }
+  #homepage > main #actus > ul > li > article footer {
+    text-align: center;
+  }
+  #homepage > main #actus > ul > li > article button {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #313193;
+    cursor: pointer;
+  }
+  #homepage > main #actus > ul > li > article button:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #d2232a;
+    color: #000;
+  }
+  #homepage > main #actus > ul > li > article a {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #313193;
+    cursor: pointer;
+  }
+  #homepage > main #actus > ul > li > article a:hover {
+    background-color: #fff;
+    box-shadow: 2px 2px 15px #d2232a;
+    color: #000;
+  }
+  #homepage > footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: #313193;
+  }
+  #homepage > footer > section:first-of-type {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #homepage > footer > section:nth-of-type(2) {
+    grid-column: 3/5;
+    display: grid;
+    grid-template-rows: 0.8fr 0.8fr 0.2fr;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  #homepage > footer > section:nth-of-type(2) .a1 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+  }
+  #homepage > footer > section:nth-of-type(2) .a2 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #1DA1F2;
+  }
+  #homepage > footer > section:nth-of-type(2) .a3 {
+    text-decoration: none;
+    font-size: 2em;
+    color: #F56040;
+  }
+  #homepage > footer > section:nth-of-type(2) .a1:hover {
+    background-color: #4267B2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) .a2:hover {
+    background: #1DA1F2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  #homepage > footer > section:nth-of-type(2) ul li {
+    display: inline-block;
+  }
+  #homepage > footer > section:nth-of-type(2) h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  #homepage > footer > section:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.darkfoot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #313193;
+  width: 100vw;
+}
+.darkfoot > section:first-of-type {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darkfoot > section:nth-of-type(2) {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 0.8fr 0.8fr 0.2fr;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.darkfoot > section:nth-of-type(2) .a1 {
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+}
+.darkfoot > section:nth-of-type(2) .a2 {
+  text-decoration: none;
+  font-size: 2em;
+  color: #1DA1F2;
+}
+.darkfoot > section:nth-of-type(2) .a3 {
+  text-decoration: none;
+  font-size: 2em;
+  color: #F56040;
+}
+.darkfoot > section:nth-of-type(2) .a1:hover {
+  background-color: #4267B2;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.darkfoot > section:nth-of-type(2) .a2:hover {
+  background: #1DA1F2;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.darkfoot > section:nth-of-type(2) .a3:hover {
+  background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.darkfoot > section:nth-of-type(2) ul li {
+  display: inline-block;
+}
+.darkfoot > section:nth-of-type(2) h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.darkfoot > section:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3/4;
+}
+
+@media (max-width: 426px) {
   html {
     font-size: 14px;
-    scroll-behavior: smooth;
   }
-  body {
+  html #compo {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  body .hidden {
+  html #compo main {
+    font-family: "Garamond", serif;
+  }
+  html #compo main > section:first-of-type {
+    width: 100%;
+  }
+  html #compo main > section:first-of-type h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #d2232a;
+  }
+  html #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    height: 80%;
+  }
+  html #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  html #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  html #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  html #compo main > section:first-of-type > figure {
+    margin-top: 50px;
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > figure > img {
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr repeat(5, 1fr);
+    margin-bottom: 50px;
+    width: 100vw;
+    height: 1000vh;
+  }
+  html #compo main > section:last-of-type h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: #313193;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #photo {
+    width: 45vw;
+  }
+  html #compo main > section:last-of-type #gardien {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #gardien > h3 {
+    grid-row: 1/2;
+    margin-bottom: 50px;
+  }
+  html #compo main > section:last-of-type #gardien > article {
+    background-color: #313193;
+    text-align: center;
+    width: 50vw;
+    justify-self: center;
+  }
+  html #compo main > section:last-of-type #gardien > article > header {
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #gardien > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #gardien > article > footer {
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1194px) {
+  html {
+    font-size: 14px;
+  }
+  html #compo {
+    width: 100vw;
+  }
+  html #compo main {
+    font-family: "Garamond", serif;
+  }
+  html #compo main > section:first-of-type {
+    width: 100%;
+  }
+  html #compo main > section:first-of-type h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #d2232a;
+  }
+  html #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    height: 80%;
+  }
+  html #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  html #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  html #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  html #compo main > section:first-of-type > figure {
+    width: 100vw;
+    margin-top: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  html #compo main > section:last-of-type h2 {
+    color: #313193;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  html #compo main > section:last-of-type #photo {
+    height: 450px;
+  }
+  html #compo main > section:last-of-type #gardien {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #gardien > h3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #gardien > article {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #gardien > article > header h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #gardien > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    margin-bottom: 650px;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: -550px;
+    margin-bottom: 800px;
+  }
+  html #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    margin-bottom: 800px;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 3/4;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1194px) {
+  html {
+    font-size: 14px;
+  }
+  html #compo {
+    width: 100vw;
+  }
+  html #compo main {
+    font-family: "Garamond", serif;
+  }
+  html #compo main > section:first-of-type {
+    width: 100%;
+  }
+  html #compo main > section:first-of-type h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #d2232a;
+  }
+  html #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-left: -2vw;
+    border-left: 2px solid #313193;
+    border-right: 2px solid #313193;
+    height: 80%;
+  }
+  html #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  html #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  html #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  html #compo main > section:first-of-type > figure {
+    margin-top: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  html #compo main > section:last-of-type h2 {
+    color: #313193;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  html #compo main > section:last-of-type #photo {
+    height: 450px;
+  }
+  html #compo main > section:last-of-type #gardien {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #gardien > h3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #gardien > article {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #gardien > article > header h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #gardien > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1441px) {
+  html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+  #season {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  #season .hidden {
     display: none;
   }
-  body > main > header {
+  #season > main > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -663,84 +3434,84 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > header section {
+  #season > main > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > header section h1 {
+  #season > main > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:first-of-type {
+  #season > main > section:first-of-type {
     height: 110vh;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  body > main > section:first-of-type table {
+  #season > main > section:first-of-type table {
     grid-column: 2/3;
     justify-self: center;
     width: 100%;
     border-radius: 1em;
     align-self: center;
   }
-  body > main > section:first-of-type table thead {
+  #season > main > section:first-of-type table thead {
     height: 6vh;
     background-color: #d2232a;
     width: 100%;
   }
-  body > main > section:first-of-type table thead tr {
+  #season > main > section:first-of-type table thead tr {
     text-align: center;
   }
-  body > main > section:first-of-type table thead tr th {
+  #season > main > section:first-of-type table thead tr th {
     font-size: 2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     color: white;
     padding: 0.9em;
   }
-  body > main > section:first-of-type table tbody #rfc {
+  #season > main > section:first-of-type table tbody #rfc {
     height: 5vh;
     background-color: #1D1DAA;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody #rfc td {
+  #season > main > section:first-of-type table tbody #rfc td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: white;
   }
-  body > main > section:first-of-type table tbody .main-tr {
+  #season > main > section:first-of-type table tbody .main-tr {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody .main-tr td {
+  #season > main > section:first-of-type table tbody .main-tr td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: #1D1DAA;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) td {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: #393941;
   }
-  body > main > section:nth-of-type(2) > header {
+  #season > main > section:nth-of-type(2) > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://static.wixstatic.com/media/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -750,26 +3521,26 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > section:nth-of-type(2) > header section {
+  #season > main > section:nth-of-type(2) > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) > header section h1 {
+  #season > main > section:nth-of-type(2) > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:nth-of-type(2) article {
+  #season > main > section:nth-of-type(2) article {
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
   }
-  body > main > section:nth-of-type(2) article ul {
+  #season > main > section:nth-of-type(2) article ul {
     grid-column: 2/3;
   }
-  body > main > section:nth-of-type(2) article ul header {
+  #season > main > section:nth-of-type(2) article ul header {
     border-radius: 10px 10px 0 0;
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
@@ -778,44 +3549,44 @@ table {
     background-color: #d2232a;
     height: 6vh;
   }
-  body > main > section:nth-of-type(2) article ul header ul {
+  #season > main > section:nth-of-type(2) article ul header ul {
     justify-self: start;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) article ul header ul li {
+  #season > main > section:nth-of-type(2) article ul header ul li {
     display: inline-block;
     color: white;
     font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
   }
-  body > main > section:nth-of-type(2) article ul header ul span {
+  #season > main > section:nth-of-type(2) article ul header ul span {
     padding-right: 2vw;
     padding-left: 2vw;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article {
     background-color: #CFCFCF;
     border-radius: 0 0 10px 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure img {
     width: 5vw;
     height: 12vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure p {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -827,7 +3598,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -839,32 +3610,32 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article {
     margin-top: 2vh;
     background-color: #CFCFCF;
     border-radius: 10px;
@@ -872,22 +3643,22 @@ table {
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure img {
     width: 5vw;
     height: 12vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure p {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -899,7 +3670,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -911,39 +3682,39 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:last-of-type {
+  #season > main > section:last-of-type {
     background-color: #7F96C7;
   }
-  body > main > section:last-of-type article {
+  #season > main > section:last-of-type article {
     padding: 3em 10em 3em 10em;
     margin-top: 20vh;
   }
-  body > main > section:last-of-type article h5 {
+  #season > main > section:last-of-type article h5 {
     margin-bottom: 2em;
     margin-right: 45vw;
     padding: 1em;
@@ -953,24 +3724,24 @@ table {
     background: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7));
     color: white;
   }
-  body > main > section:last-of-type article p {
+  #season > main > section:last-of-type article p {
     font-size: 1.3em;
     font-family: "Roboto Mono", monospace;
     line-height: 2em;
     text-align: justify;
   }
-  body > footer {
+  #season > footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background: #313193;
   }
-  body > footer > section:first-of-type {
+  #season > footer > section:first-of-type {
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body > footer > section:nth-of-type(2) {
+  #season > footer > section:nth-of-type(2) {
     grid-column: 3/5;
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
@@ -978,49 +3749,49 @@ table {
     padding: 20px;
     text-align: center;
   }
-  body > footer > section:nth-of-type(2) .a1 {
+  #season > footer > section:nth-of-type(2) .a1 {
     text-decoration: none;
     font-size: 2em;
     color: #fff;
   }
-  body > footer > section:nth-of-type(2) .a2 {
+  #season > footer > section:nth-of-type(2) .a2 {
     text-decoration: none;
     font-size: 2em;
     color: #1DA1F2;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  body > footer > section:nth-of-type(2) .a3 {
+  #season > footer > section:nth-of-type(2) .a3 {
     text-decoration: none;
     font-size: 2em;
     color: #F56040;
   }
-  body > footer > section:nth-of-type(2) .a1:hover {
+  #season > footer > section:nth-of-type(2) .a1:hover {
     background-color: #4267B2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a2:hover {
+  #season > footer > section:nth-of-type(2) .a2:hover {
     background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a3:hover {
+  #season > footer > section:nth-of-type(2) .a3:hover {
     background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) ul li {
+  #season > footer > section:nth-of-type(2) ul li {
     display: inline-block;
   }
-  body > footer > section:nth-of-type(2) h2 {
+  #season > footer > section:nth-of-type(2) h2 {
     font-size: 2rem;
     text-transform: uppercase;
   }
-  body > footer > section:last-of-type {
+  #season > footer > section:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1031,17 +3802,17 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #season {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  body .hidden {
+  #season .hidden {
     display: none;
   }
-  body > main > header {
+  #season > main > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1051,84 +3822,84 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > header section {
+  #season > main > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > header section h1 {
+  #season > main > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:first-of-type {
+  #season > main > section:first-of-type {
     height: 110vh;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  body > main > section:first-of-type table {
+  #season > main > section:first-of-type table {
     grid-column: 2/3;
     justify-self: center;
     width: 100%;
     border-radius: 1em;
     align-self: center;
   }
-  body > main > section:first-of-type table thead {
+  #season > main > section:first-of-type table thead {
     height: 6vh;
     background-color: #d2232a;
     width: 100%;
   }
-  body > main > section:first-of-type table thead tr {
+  #season > main > section:first-of-type table thead tr {
     text-align: center;
   }
-  body > main > section:first-of-type table thead tr th {
+  #season > main > section:first-of-type table thead tr th {
     font-size: 2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     color: white;
     padding: 0.9em;
   }
-  body > main > section:first-of-type table tbody #rfc {
+  #season > main > section:first-of-type table tbody #rfc {
     height: 5vh;
     background-color: #1D1DAA;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody #rfc td {
+  #season > main > section:first-of-type table tbody #rfc td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: white;
   }
-  body > main > section:first-of-type table tbody .main-tr {
+  #season > main > section:first-of-type table tbody .main-tr {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody .main-tr td {
+  #season > main > section:first-of-type table tbody .main-tr td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: #1D1DAA;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) td {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: #393941;
   }
-  body > main > section:nth-of-type(2) > header {
+  #season > main > section:nth-of-type(2) > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://static.wixstatic.com/media/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1138,26 +3909,26 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > section:nth-of-type(2) > header section {
+  #season > main > section:nth-of-type(2) > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) > header section h1 {
+  #season > main > section:nth-of-type(2) > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:nth-of-type(2) article {
+  #season > main > section:nth-of-type(2) article {
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
   }
-  body > main > section:nth-of-type(2) article ul {
+  #season > main > section:nth-of-type(2) article ul {
     grid-column: 2/3;
   }
-  body > main > section:nth-of-type(2) article ul header {
+  #season > main > section:nth-of-type(2) article ul header {
     border-radius: 10px 10px 0 0;
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
@@ -1166,44 +3937,44 @@ table {
     background-color: #d2232a;
     height: 6vh;
   }
-  body > main > section:nth-of-type(2) article ul header ul {
+  #season > main > section:nth-of-type(2) article ul header ul {
     justify-self: start;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) article ul header ul li {
+  #season > main > section:nth-of-type(2) article ul header ul li {
     display: inline-block;
     color: white;
     font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
   }
-  body > main > section:nth-of-type(2) article ul header ul span {
+  #season > main > section:nth-of-type(2) article ul header ul span {
     padding-right: 2vw;
     padding-left: 2vw;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article {
     background-color: #CFCFCF;
     border-radius: 0 0 10px 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure img {
     width: 5vw;
     height: 12vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure p {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1215,7 +3986,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1227,32 +3998,32 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article {
     margin-top: 2vh;
     background-color: #CFCFCF;
     border-radius: 10px;
@@ -1260,22 +4031,22 @@ table {
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure img {
     width: 5vw;
     height: 12vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure p {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1287,7 +4058,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1299,39 +4070,39 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:last-of-type {
+  #season > main > section:last-of-type {
     background-color: #7F96C7;
   }
-  body > main > section:last-of-type article {
+  #season > main > section:last-of-type article {
     padding: 3em 10em 3em 10em;
     margin-top: 20vh;
   }
-  body > main > section:last-of-type article h5 {
+  #season > main > section:last-of-type article h5 {
     margin-bottom: 2em;
     margin-right: 45vw;
     padding: 1em;
@@ -1341,24 +4112,24 @@ table {
     background: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7));
     color: white;
   }
-  body > main > section:last-of-type article p {
+  #season > main > section:last-of-type article p {
     font-size: 1.3em;
     font-family: "Roboto Mono", monospace;
     line-height: 2em;
     text-align: justify;
   }
-  body > footer {
+  #season > footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background: #313193;
   }
-  body > footer > section:first-of-type {
+  #season > footer > section:first-of-type {
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body > footer > section:nth-of-type(2) {
+  #season > footer > section:nth-of-type(2) {
     grid-column: 3/5;
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
@@ -1366,49 +4137,49 @@ table {
     padding: 20px;
     text-align: center;
   }
-  body > footer > section:nth-of-type(2) .a1 {
+  #season > footer > section:nth-of-type(2) .a1 {
     text-decoration: none;
     font-size: 2em;
     color: #fff;
   }
-  body > footer > section:nth-of-type(2) .a2 {
+  #season > footer > section:nth-of-type(2) .a2 {
     text-decoration: none;
     font-size: 2em;
     color: #1DA1F2;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  body > footer > section:nth-of-type(2) .a3 {
+  #season > footer > section:nth-of-type(2) .a3 {
     text-decoration: none;
     font-size: 2em;
     color: #F56040;
   }
-  body > footer > section:nth-of-type(2) .a1:hover {
+  #season > footer > section:nth-of-type(2) .a1:hover {
     background-color: #4267B2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a2:hover {
+  #season > footer > section:nth-of-type(2) .a2:hover {
     background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a3:hover {
+  #season > footer > section:nth-of-type(2) .a3:hover {
     background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) ul li {
+  #season > footer > section:nth-of-type(2) ul li {
     display: inline-block;
   }
-  body > footer > section:nth-of-type(2) h2 {
+  #season > footer > section:nth-of-type(2) h2 {
     font-size: 2rem;
     text-transform: uppercase;
   }
-  body > footer > section:last-of-type {
+  #season > footer > section:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1419,17 +4190,17 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #season {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  body .hidden {
+  #season .hidden {
     display: none;
   }
-  body > main > header {
+  #season > main > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1439,84 +4210,84 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > header section {
+  #season > main > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > header section h1 {
+  #season > main > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:first-of-type {
+  #season > main > section:first-of-type {
     height: 110vh;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  body > main > section:first-of-type table {
+  #season > main > section:first-of-type table {
     grid-column: 2/3;
     justify-self: center;
     width: 100%;
     border-radius: 1em;
     align-self: center;
   }
-  body > main > section:first-of-type table thead {
+  #season > main > section:first-of-type table thead {
     height: 6vh;
     background-color: #d2232a;
     width: 100%;
   }
-  body > main > section:first-of-type table thead tr {
+  #season > main > section:first-of-type table thead tr {
     text-align: center;
   }
-  body > main > section:first-of-type table thead tr th {
+  #season > main > section:first-of-type table thead tr th {
     font-size: 2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     color: white;
     padding: 0.9em;
   }
-  body > main > section:first-of-type table tbody #rfc {
+  #season > main > section:first-of-type table tbody #rfc {
     height: 5vh;
     background-color: #1D1DAA;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody #rfc td {
+  #season > main > section:first-of-type table tbody #rfc td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: white;
   }
-  body > main > section:first-of-type table tbody .main-tr {
+  #season > main > section:first-of-type table tbody .main-tr {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody .main-tr td {
+  #season > main > section:first-of-type table tbody .main-tr td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: #1D1DAA;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) td {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) td {
     font-size: 1.1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     padding-top: 0.9em;
     color: #393941;
   }
-  body > main > section:nth-of-type(2) > header {
+  #season > main > section:nth-of-type(2) > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://static.wixstatic.com/media/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1526,26 +4297,26 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > section:nth-of-type(2) > header section {
+  #season > main > section:nth-of-type(2) > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) > header section h1 {
+  #season > main > section:nth-of-type(2) > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:nth-of-type(2) article {
+  #season > main > section:nth-of-type(2) article {
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
   }
-  body > main > section:nth-of-type(2) article ul {
+  #season > main > section:nth-of-type(2) article ul {
     grid-column: 2/3;
   }
-  body > main > section:nth-of-type(2) article ul header {
+  #season > main > section:nth-of-type(2) article ul header {
     border-radius: 10px 10px 0 0;
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
@@ -1554,44 +4325,44 @@ table {
     background-color: #d2232a;
     height: 6vh;
   }
-  body > main > section:nth-of-type(2) article ul header ul {
+  #season > main > section:nth-of-type(2) article ul header ul {
     justify-self: start;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) article ul header ul li {
+  #season > main > section:nth-of-type(2) article ul header ul li {
     display: inline-block;
     color: white;
     font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
   }
-  body > main > section:nth-of-type(2) article ul header ul span {
+  #season > main > section:nth-of-type(2) article ul header ul span {
     padding-right: 2vw;
     padding-left: 2vw;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article {
     background-color: #CFCFCF;
     border-radius: 0 0 10px 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure img {
     width: 5vw;
     height: 12vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure p {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1603,7 +4374,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1615,32 +4386,32 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article {
     margin-top: 2vh;
     background-color: #CFCFCF;
     border-radius: 10px;
@@ -1648,22 +4419,22 @@ table {
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure img {
     width: 5vw;
     height: 12vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure p {
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1675,7 +4446,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
@@ -1687,39 +4458,39 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
     text-align: center;
     font-size: 1.2em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:last-of-type {
+  #season > main > section:last-of-type {
     background-color: #7F96C7;
   }
-  body > main > section:last-of-type article {
+  #season > main > section:last-of-type article {
     padding: 3em 10em 3em 10em;
     margin-top: 20vh;
   }
-  body > main > section:last-of-type article h5 {
+  #season > main > section:last-of-type article h5 {
     margin-bottom: 2em;
     margin-right: 45vw;
     padding: 1em;
@@ -1729,24 +4500,24 @@ table {
     background: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7));
     color: white;
   }
-  body > main > section:last-of-type article p {
+  #season > main > section:last-of-type article p {
     font-size: 1.3em;
     font-family: "Roboto Mono", monospace;
     line-height: 2em;
     text-align: justify;
   }
-  body > footer {
+  #season > footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     background: #313193;
   }
-  body > footer > section:first-of-type {
+  #season > footer > section:first-of-type {
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body > footer > section:nth-of-type(2) {
+  #season > footer > section:nth-of-type(2) {
     grid-column: 3/5;
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
@@ -1754,49 +4525,49 @@ table {
     padding: 20px;
     text-align: center;
   }
-  body > footer > section:nth-of-type(2) .a1 {
+  #season > footer > section:nth-of-type(2) .a1 {
     text-decoration: none;
     font-size: 2em;
     color: #fff;
   }
-  body > footer > section:nth-of-type(2) .a2 {
+  #season > footer > section:nth-of-type(2) .a2 {
     text-decoration: none;
     font-size: 2em;
     color: #1DA1F2;
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  body > footer > section:nth-of-type(2) .a3 {
+  #season > footer > section:nth-of-type(2) .a3 {
     text-decoration: none;
     font-size: 2em;
     color: #F56040;
   }
-  body > footer > section:nth-of-type(2) .a1:hover {
+  #season > footer > section:nth-of-type(2) .a1:hover {
     background-color: #4267B2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a2:hover {
+  #season > footer > section:nth-of-type(2) .a2:hover {
     background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a3:hover {
+  #season > footer > section:nth-of-type(2) .a3:hover {
     background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) ul li {
+  #season > footer > section:nth-of-type(2) ul li {
     display: inline-block;
   }
-  body > footer > section:nth-of-type(2) h2 {
+  #season > footer > section:nth-of-type(2) h2 {
     font-size: 2rem;
     text-transform: uppercase;
   }
-  body > footer > section:last-of-type {
+  #season > footer > section:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1807,17 +4578,17 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #season {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  body .hidden {
+  #season .hidden {
     display: none;
   }
-  body > main > header {
+  #season > main > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1827,53 +4598,53 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > header section {
+  #season > main > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > header section h1 {
+  #season > main > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:first-of-type {
+  #season > main > section:first-of-type {
     min-height: 100vh;
     margin-top: 2em;
     margin-bottom: 2em;
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
   }
-  body > main > section:first-of-type table {
+  #season > main > section:first-of-type table {
     grid-column: 2/3;
     justify-self: center;
     width: 100%;
     border-radius: 1em;
     align-self: center;
   }
-  body > main > section:first-of-type table thead {
+  #season > main > section:first-of-type table thead {
     height: 6vh;
     background-color: #d2232a;
     width: 100%;
   }
-  body > main > section:first-of-type table thead tr {
+  #season > main > section:first-of-type table thead tr {
     text-align: center;
   }
-  body > main > section:first-of-type table thead tr th {
+  #season > main > section:first-of-type table thead tr th {
     font-size: 1.5em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     color: white;
     padding: 1.2em;
   }
-  body > main > section:first-of-type table tbody #rfc {
+  #season > main > section:first-of-type table tbody #rfc {
     height: 5vh;
     background-color: #1D1DAA;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody #rfc td {
+  #season > main > section:first-of-type table tbody #rfc td {
     font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
@@ -1881,12 +4652,12 @@ table {
     padding-right: 0.9em;
     color: white;
   }
-  body > main > section:first-of-type table tbody .main-tr {
+  #season > main > section:first-of-type table tbody .main-tr {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody .main-tr td {
+  #season > main > section:first-of-type table tbody .main-tr td {
     font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
@@ -1894,12 +4665,12 @@ table {
     padding-right: 0.9em;
     color: #1D1DAA;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) td {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) td {
     font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
@@ -1907,7 +4678,7 @@ table {
     padding-right: 0.9em;
     color: #393941;
   }
-  body > main > section:nth-of-type(2) > header {
+  #season > main > section:nth-of-type(2) > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://static.wixstatic.com/media/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1917,61 +4688,61 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > section:nth-of-type(2) > header section {
+  #season > main > section:nth-of-type(2) > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) > header section h1 {
+  #season > main > section:nth-of-type(2) > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:nth-of-type(2) article ul header {
+  #season > main > section:nth-of-type(2) article ul header {
     border-radius: 10px 10px 0 0;
     margin-top: 2em;
     margin-bottom: 0.8em;
     background-color: #d2232a;
     height: 6vh;
   }
-  body > main > section:nth-of-type(2) article ul header ul {
+  #season > main > section:nth-of-type(2) article ul header ul {
     padding-top: 1em;
   }
-  body > main > section:nth-of-type(2) article ul header ul li {
+  #season > main > section:nth-of-type(2) article ul header ul li {
     display: inline-block;
     color: white;
     font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
   }
-  body > main > section:nth-of-type(2) article ul header ul span {
+  #season > main > section:nth-of-type(2) article ul header ul span {
     padding-right: 2vw;
     padding-left: 2vw;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article {
     background-color: #CFCFCF;
     border-radius: 0 0 10px 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 25vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure img {
     height: 8vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure p {
     font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -1983,7 +4754,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -1995,32 +4766,32 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article {
     margin-top: 2vh;
     background-color: #CFCFCF;
     border-radius: 10px;
@@ -2028,21 +4799,21 @@ table {
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure img {
     height: 8vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure p {
     font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -2054,7 +4825,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -2066,39 +4837,39 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:last-of-type {
+  #season > main > section:last-of-type {
     background-color: #7F96C7;
   }
-  body > main > section:last-of-type article {
+  #season > main > section:last-of-type article {
     margin-top: 10vh;
     padding-bottom: 3vh;
   }
-  body > main > section:last-of-type article h5 {
+  #season > main > section:last-of-type article h5 {
     margin-bottom: 2em;
     margin-right: 20vw;
     padding: 1em;
@@ -2108,28 +4879,28 @@ table {
     background: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7));
     color: white;
   }
-  body > main > section:last-of-type article p {
+  #season > main > section:last-of-type article p {
     font-size: 1em;
     font-family: "Roboto Mono", monospace;
     line-height: 2em;
     text-align: justify;
   }
-  body > footer {
+  #season > footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background: #313193;
     width: 100vw;
   }
-  body > footer > section:first-of-type {
+  #season > footer > section:first-of-type {
     grid-column: 1/2;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body > footer > section:first-of-type figure img {
+  #season > footer > section:first-of-type figure img {
     height: 10vh;
   }
-  body > footer > section:nth-of-type(2) {
+  #season > footer > section:nth-of-type(2) {
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
@@ -2138,58 +4909,58 @@ table {
     padding-bottom: 2vh;
     text-align: center;
   }
-  body > footer > section:nth-of-type(2) .a1 {
+  #season > footer > section:nth-of-type(2) .a1 {
     text-decoration: none;
     font-size: 2em;
     color: #fff;
   }
-  body > footer > section:nth-of-type(2) .a2 {
+  #season > footer > section:nth-of-type(2) .a2 {
     text-decoration: none;
     font-size: 2em;
     color: #1DA1F2;
   }
-  body > footer > section:nth-of-type(2) .a3 {
+  #season > footer > section:nth-of-type(2) .a3 {
     text-decoration: none;
     font-size: 2em;
     color: #F56040;
   }
-  body > footer > section:nth-of-type(2) .a1:hover {
+  #season > footer > section:nth-of-type(2) .a1:hover {
     background-color: #4267B2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a2:hover {
+  #season > footer > section:nth-of-type(2) .a2:hover {
     background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a3:hover {
+  #season > footer > section:nth-of-type(2) .a3:hover {
     background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) ul {
+  #season > footer > section:nth-of-type(2) ul {
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
-  body > footer > section:nth-of-type(2) ul li {
+  #season > footer > section:nth-of-type(2) ul li {
     display: inline-block;
   }
-  body > footer > section:nth-of-type(2) h2 {
+  #season > footer > section:nth-of-type(2) h2 {
     font-size: 1.2em;
     font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
   }
-  body > footer > section:last-of-type {
+  #season > footer > section:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 3/4;
   }
-  body > footer > section:last-of-type figure img {
+  #season > footer > section:last-of-type figure img {
     height: 10vh;
   }
 }
@@ -2198,17 +4969,17 @@ table {
     font-size: 14px;
     scroll-behavior: smooth;
   }
-  body {
+  #season {
     min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
   }
-  body .hidden {
+  #season .hidden {
     display: none;
   }
-  body > main > header {
+  #season > main > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://www.sofoot.com/IMG/img_580_380_center_articles-219451.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -2218,53 +4989,53 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > header section {
+  #season > main > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > header section h1 {
+  #season > main > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:first-of-type {
+  #season > main > section:first-of-type {
     min-height: 100vh;
     margin-top: 2em;
     margin-bottom: 2em;
     display: grid;
     grid-template-columns: 0.1fr 1fr 0.1fr;
   }
-  body > main > section:first-of-type table {
+  #season > main > section:first-of-type table {
     grid-column: 2/3;
     justify-self: center;
     width: 100%;
     border-radius: 1em;
     align-self: center;
   }
-  body > main > section:first-of-type table thead {
+  #season > main > section:first-of-type table thead {
     height: 6vh;
     background-color: #d2232a;
     width: 100%;
   }
-  body > main > section:first-of-type table thead tr {
+  #season > main > section:first-of-type table thead tr {
     text-align: center;
   }
-  body > main > section:first-of-type table thead tr th {
+  #season > main > section:first-of-type table thead tr th {
     font-size: 1.5em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     color: white;
     padding: 1.2em;
   }
-  body > main > section:first-of-type table tbody #rfc {
+  #season > main > section:first-of-type table tbody #rfc {
     height: 5vh;
     background-color: #1D1DAA;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody #rfc td {
+  #season > main > section:first-of-type table tbody #rfc td {
     font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
@@ -2272,12 +5043,12 @@ table {
     padding-right: 0.9em;
     color: white;
   }
-  body > main > section:first-of-type table tbody .main-tr {
+  #season > main > section:first-of-type table tbody .main-tr {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody .main-tr td {
+  #season > main > section:first-of-type table tbody .main-tr td {
     font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
@@ -2285,12 +5056,12 @@ table {
     padding-right: 0.9em;
     color: #1D1DAA;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) {
     height: 5vh;
     background-color: #CFCFCF;
     text-align: center;
   }
-  body > main > section:first-of-type table tbody tr:not(.main-tr) td {
+  #season > main > section:first-of-type table tbody tr:not(.main-tr) td {
     font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
@@ -2298,7 +5069,7 @@ table {
     padding-right: 0.9em;
     color: #393941;
   }
-  body > main > section:nth-of-type(2) > header {
+  #season > main > section:nth-of-type(2) > header {
     background-image: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7)), url("https://static.wixstatic.com/media/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg/v1/fill/w_640,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2ea955_0d8ccdb6801c42198fa241653cf1510f~mv2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -2308,61 +5079,61 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  body > main > section:nth-of-type(2) > header section {
+  #season > main > section:nth-of-type(2) > header section {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
   }
-  body > main > section:nth-of-type(2) > header section h1 {
+  #season > main > section:nth-of-type(2) > header section h1 {
     color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:nth-of-type(2) article ul header {
+  #season > main > section:nth-of-type(2) article ul header {
     border-radius: 10px 10px 0 0;
     margin-top: 2em;
     margin-bottom: 0.8em;
     background-color: #d2232a;
     height: 6vh;
   }
-  body > main > section:nth-of-type(2) article ul header ul {
+  #season > main > section:nth-of-type(2) article ul header ul {
     padding-top: 1em;
   }
-  body > main > section:nth-of-type(2) article ul header ul li {
+  #season > main > section:nth-of-type(2) article ul header ul li {
     display: inline-block;
     color: white;
     font-size: 1.2em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
   }
-  body > main > section:nth-of-type(2) article ul header ul span {
+  #season > main > section:nth-of-type(2) article ul header ul span {
     padding-right: 2vw;
     padding-left: 2vw;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article {
     background-color: #CFCFCF;
     border-radius: 0 0 10px 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 25vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure img {
     height: 8vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article figure p {
     font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -2374,7 +5145,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -2386,32 +5157,32 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article {
     margin-top: 2vh;
     background-color: #CFCFCF;
     border-radius: 10px;
@@ -2419,21 +5190,21 @@ table {
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
     height: 20vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure {
     align-self: center;
     justify-self: center;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure img {
     height: 8vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article figure p {
     font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -2445,7 +5216,7 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
     font-size: 2.5em;
     font-weight: 600;
     text-align: center;
@@ -2457,39 +5228,39 @@ table {
     padding: 0.2em;
     font-family: "Roboto Condensed", sans-serif;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section {
     justify-self: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     row-gap: 1vh;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
+  #season > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     color: black;
   }
-  body > main > section:last-of-type {
+  #season > main > section:last-of-type {
     background-color: #7F96C7;
   }
-  body > main > section:last-of-type article {
+  #season > main > section:last-of-type article {
     margin-top: 10vh;
     padding-bottom: 3vh;
   }
-  body > main > section:last-of-type article h5 {
+  #season > main > section:last-of-type article h5 {
     margin-bottom: 2em;
     margin-right: 20vw;
     padding: 1em;
@@ -2499,28 +5270,28 @@ table {
     background: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7));
     color: white;
   }
-  body > main > section:last-of-type article p {
+  #season > main > section:last-of-type article p {
     font-size: 1em;
     font-family: "Roboto Mono", monospace;
     line-height: 2em;
     text-align: justify;
   }
-  body > footer {
+  #season > footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background: #313193;
     width: 100vw;
   }
-  body > footer > section:first-of-type {
+  #season > footer > section:first-of-type {
     grid-column: 1/2;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  body > footer > section:first-of-type figure img {
+  #season > footer > section:first-of-type figure img {
     height: 10vh;
   }
-  body > footer > section:nth-of-type(2) {
+  #season > footer > section:nth-of-type(2) {
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
@@ -2529,58 +5300,58 @@ table {
     padding-bottom: 2vh;
     text-align: center;
   }
-  body > footer > section:nth-of-type(2) .a1 {
+  #season > footer > section:nth-of-type(2) .a1 {
     text-decoration: none;
     font-size: 2em;
     color: #fff;
   }
-  body > footer > section:nth-of-type(2) .a2 {
+  #season > footer > section:nth-of-type(2) .a2 {
     text-decoration: none;
     font-size: 2em;
     color: #1DA1F2;
   }
-  body > footer > section:nth-of-type(2) .a3 {
+  #season > footer > section:nth-of-type(2) .a3 {
     text-decoration: none;
     font-size: 2em;
     color: #F56040;
   }
-  body > footer > section:nth-of-type(2) .a1:hover {
+  #season > footer > section:nth-of-type(2) .a1:hover {
     background-color: #4267B2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a2:hover {
+  #season > footer > section:nth-of-type(2) .a2:hover {
     background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) .a3:hover {
+  #season > footer > section:nth-of-type(2) .a3:hover {
     background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
-  body > footer > section:nth-of-type(2) ul {
+  #season > footer > section:nth-of-type(2) ul {
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
-  body > footer > section:nth-of-type(2) ul li {
+  #season > footer > section:nth-of-type(2) ul li {
     display: inline-block;
   }
-  body > footer > section:nth-of-type(2) h2 {
+  #season > footer > section:nth-of-type(2) h2 {
     font-size: 1.2em;
     font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
   }
-  body > footer > section:last-of-type {
+  #season > footer > section:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column: 3/4;
   }
-  body > footer > section:last-of-type figure img {
+  #season > footer > section:last-of-type figure img {
     height: 10vh;
   }
 }
