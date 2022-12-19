@@ -446,7 +446,6 @@ table {
     align-items: center;
   }
   .header1 nav figure img {
-    width: 13vw;
     height: 15vh;
     margin-bottom: 1vh;
   }
@@ -1460,11 +1459,11 @@ table {
     font-family: "Roboto Mono", monospace;
   }
   body > main > section:first-of-type {
-    height: 110vh;
+    min-height: 100vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    background-repeat: no-repeat;
-    background-size: cover;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
   }
   body > main > section:first-of-type table {
     grid-column: 2/3;
@@ -1482,11 +1481,11 @@ table {
     text-align: center;
   }
   body > main > section:first-of-type table thead tr th {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
     color: white;
-    padding: 0.9em;
+    padding: 1.2em;
   }
   body > main > section:first-of-type table tbody #rfc {
     height: 5vh;
@@ -1494,10 +1493,11 @@ table {
     text-align: center;
   }
   body > main > section:first-of-type table tbody #rfc td {
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
-    padding-top: 0.9em;
+    padding-top: 1.2em;
+    padding-right: 0.9em;
     color: white;
   }
   body > main > section:first-of-type table tbody .main-tr {
@@ -1506,10 +1506,11 @@ table {
     text-align: center;
   }
   body > main > section:first-of-type table tbody .main-tr td {
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
-    padding-top: 0.9em;
+    padding-top: 1.2em;
+    padding-right: 0.9em;
     color: #1D1DAA;
   }
   body > main > section:first-of-type table tbody tr:not(.main-tr) {
@@ -1518,10 +1519,11 @@ table {
     text-align: center;
   }
   body > main > section:first-of-type table tbody tr:not(.main-tr) td {
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 600;
-    padding-top: 0.9em;
+    padding-top: 1.2em;
+    padding-right: 0.9em;
     color: #393941;
   }
   body > main > section:nth-of-type(2) > header {
@@ -1546,25 +1548,15 @@ table {
     font-weight: 800;
     font-family: "Roboto Mono", monospace;
   }
-  body > main > section:nth-of-type(2) article {
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-  }
-  body > main > section:nth-of-type(2) article ul {
-    grid-column: 2/3;
-  }
   body > main > section:nth-of-type(2) article ul header {
     border-radius: 10px 10px 0 0;
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
     margin-top: 2em;
     margin-bottom: 0.8em;
     background-color: #d2232a;
     height: 6vh;
   }
   body > main > section:nth-of-type(2) article ul header ul {
-    justify-self: start;
-    align-self: center;
+    padding-top: 1em;
   }
   body > main > section:nth-of-type(2) article ul header ul li {
     display: inline-block;
@@ -1582,25 +1574,24 @@ table {
     border-radius: 0 0 10px 10px;
     display: grid;
     grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
-    height: 20vh;
+    height: 25vh;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article figure {
     align-self: center;
     justify-self: center;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
-    width: 5vw;
-    height: 12vh;
+    height: 8vh;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     text-align: center;
     color: #B20A0A;
@@ -1612,7 +1603,7 @@ table {
     font-family: "Roboto Condensed", sans-serif;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     text-align: center;
     color: #13671B;
@@ -1632,19 +1623,19 @@ table {
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: black;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: black;
   }
   body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: black;
   }
@@ -1661,18 +1652,17 @@ table {
     justify-self: center;
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
-    width: 5vw;
-    height: 12vh;
+    height: 8vh;
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: black;
     margin-top: 1.5vh;
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     text-align: center;
     color: #13671B;
@@ -1684,7 +1674,7 @@ table {
     font-family: "Roboto Condensed", sans-serif;
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     text-align: center;
     color: #B20A0A;
@@ -1704,19 +1694,19 @@ table {
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: black;
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: black;
   }
   body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     color: black;
   }
@@ -1724,42 +1714,47 @@ table {
     background-color: #7F96C7;
   }
   body > main > section:last-of-type article {
-    padding: 3em 10em 3em 10em;
-    margin-top: 20vh;
+    margin-top: 10vh;
+    padding-bottom: 3vh;
   }
   body > main > section:last-of-type article h5 {
     margin-bottom: 2em;
-    margin-right: 45vw;
+    margin-right: 20vw;
     padding: 1em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 600;
     font-family: "Roboto Mono", monospace;
     background: linear-gradient(rgba(49, 49, 147, 0.7), rgba(210, 35, 42, 0.7));
     color: white;
   }
   body > main > section:last-of-type article p {
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: "Roboto Mono", monospace;
     line-height: 2em;
     text-align: justify;
   }
   body > footer {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background: #313193;
+    width: 100vw;
   }
   body > footer > section:first-of-type {
-    grid-column: 2/3;
+    grid-column: 1/2;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  body > footer > section:first-of-type figure img {
+    height: 10vh;
+  }
   body > footer > section:nth-of-type(2) {
-    grid-column: 3/5;
+    grid-column: 2/3;
     display: grid;
     grid-template-rows: 0.8fr 0.8fr 0.2fr;
     color: #fff;
-    padding: 20px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     text-align: center;
   }
   body > footer > section:nth-of-type(2) .a1 {
@@ -1771,8 +1766,6 @@ table {
     text-decoration: none;
     font-size: 2em;
     color: #1DA1F2;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
   }
   body > footer > section:nth-of-type(2) .a3 {
     text-decoration: none;
@@ -1797,17 +1790,26 @@ table {
     padding: 0.5em;
     border-radius: 2em;
   }
+  body > footer > section:nth-of-type(2) ul {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
   body > footer > section:nth-of-type(2) ul li {
     display: inline-block;
   }
   body > footer > section:nth-of-type(2) h2 {
-    font-size: 2rem;
+    font-size: 1.2em;
+    font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
   }
   body > footer > section:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: 3/4;
+  }
+  body > footer > section:last-of-type figure img {
+    height: 10vh;
   }
 }
 
