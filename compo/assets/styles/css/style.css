@@ -55,7 +55,7 @@ table {
 @media (min-width: 1441px) {
   .header1 {
     height: 17vh;
-    width: 300vw;
+    width: 100vw;
     margin: 0;
     padding: 0;
     top: 0;
@@ -79,6 +79,7 @@ table {
     flex-direction: row;
   }
   .header1 nav figure img {
+    width: 5vw;
     height: 15vh;
   }
   .header1 nav figure p {
@@ -175,7 +176,7 @@ table {
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .header1 {
-    height: 17vh;
+    height: 20vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -195,18 +196,16 @@ table {
   .header1 nav figure {
     justify-self: start;
     align-self: center;
-    margin-left: 3vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
   }
   .header1 nav figure img {
-    width: 5vw;
-    height: 15vh;
+    height: 10vh;
   }
   .header1 nav figure p {
-    font-size: 1.03em;
-    align-self: center;
-    padding-left: 2.9vw;
+    font-size: 1em;
+    text-align: center;
     font-style: italic;
     font-weight: bold;
     font-family: "Roboto Mono", monospace;
@@ -219,9 +218,8 @@ table {
   .header1 nav ul:first-of-type {
     align-self: center;
     justify-self: center;
-    padding-left: 4em;
-    padding-right: 4em;
-    margin-left: -2vw;
+    padding-left: 2em;
+    padding-right: 2em;
     border-left: 2px solid #313193;
     border-right: 2px solid #313193;
     height: 80%;
@@ -237,9 +235,8 @@ table {
   }
   .header1 nav ul:first-of-type li {
     display: inline-block;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    margin-top: 5.5vh;
+    padding-left: 2vw;
+    margin-top: 7vh;
     font-size: 1em;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
@@ -248,6 +245,7 @@ table {
     padding-right: 1vw;
   }
   .header1 nav ul:last-of-type {
+    margin-right: 4vw;
     align-self: center;
     height: 80%;
     border-left: 2px solid #d2232a;
@@ -255,21 +253,20 @@ table {
     display: flex;
     flex-direction: row;
     justify-self: center;
-    margin-left: -3vw;
   }
   .header1 nav ul:last-of-type .a1 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #4267B2;
   }
   .header1 nav ul:last-of-type .a2 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #1DA1F2;
   }
   .header1 nav ul:last-of-type .a3 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #F56040;
   }
   .header1 nav ul:last-of-type .a1:hover {
@@ -292,12 +289,12 @@ table {
   }
   .header1 nav ul:last-of-type li {
     align-self: center;
-    padding: 3em;
+    padding: 2.25em;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .header1 {
-    height: 17vh;
+    height: 25vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -317,18 +314,16 @@ table {
   .header1 nav figure {
     justify-self: start;
     align-self: center;
-    margin-left: 3vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
   }
   .header1 nav figure img {
-    width: 5vw;
-    height: 15vh;
+    height: 10vh;
   }
   .header1 nav figure p {
-    font-size: 1.03em;
-    align-self: center;
-    padding-left: 2.9vw;
+    font-size: 1em;
+    text-align: center;
     font-style: italic;
     font-weight: bold;
     font-family: "Roboto Mono", monospace;
@@ -341,9 +336,9 @@ table {
   .header1 nav ul:first-of-type {
     align-self: center;
     justify-self: center;
-    padding-left: 4em;
-    padding-right: 4em;
-    margin-left: -2vw;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-align: center;
     border-left: 2px solid #313193;
     border-right: 2px solid #313193;
     height: 80%;
@@ -359,9 +354,8 @@ table {
   }
   .header1 nav ul:first-of-type li {
     display: inline-block;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    margin-top: 5.5vh;
+    padding-left: 1.5vw;
+    margin-top: 7vh;
     font-size: 1em;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
@@ -370,6 +364,7 @@ table {
     padding-right: 1vw;
   }
   .header1 nav ul:last-of-type {
+    margin-right: 4vw;
     align-self: center;
     height: 80%;
     border-left: 2px solid #d2232a;
@@ -377,21 +372,20 @@ table {
     display: flex;
     flex-direction: row;
     justify-self: center;
-    margin-left: -3vw;
   }
   .header1 nav ul:last-of-type .a1 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #4267B2;
   }
   .header1 nav ul:last-of-type .a2 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #1DA1F2;
   }
   .header1 nav ul:last-of-type .a3 {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #F56040;
   }
   .header1 nav ul:last-of-type .a1:hover {
@@ -414,7 +408,7 @@ table {
   }
   .header1 nav ul:last-of-type li {
     align-self: center;
-    padding: 3em;
+    padding: 2.25em;
   }
 }
 @media (min-width: 427px) and (max-width: 768px) {
@@ -445,12 +439,11 @@ table {
     align-items: center;
   }
   .header1 nav figure img {
-    width: 13vw;
-    height: 15vh;
+    height: 10vh;
     margin-bottom: 1vh;
   }
   .header1 nav figure p {
-    font-size: 1.5em;
+    font-size: 1em;
     align-self: center;
     font-style: italic;
     font-weight: bold;
@@ -712,7 +705,7 @@ table {
   grid-column: 3/4;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   html {
     font-size: 14px;
   }
@@ -818,7 +811,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #gardien > article > main {
@@ -857,7 +850,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
@@ -882,7 +875,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
@@ -907,7 +900,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
@@ -932,7 +925,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
@@ -974,7 +967,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
@@ -999,7 +992,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
@@ -1024,7 +1017,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
@@ -1049,7 +1042,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
@@ -1091,7 +1084,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
@@ -1116,7 +1109,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
@@ -1141,7 +1134,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
@@ -1166,7 +1159,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
@@ -1208,7 +1201,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
@@ -1233,7 +1226,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
@@ -1298,7 +1291,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
@@ -1322,7 +1315,7 @@ table {
     margin: 20px 0 20px 0;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 600;
   }
   html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
