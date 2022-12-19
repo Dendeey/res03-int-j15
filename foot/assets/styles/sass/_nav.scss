@@ -167,7 +167,7 @@
 {
     .header1
     {
-        height: 17vh;
+        height: 20vh;
         width: 100vw;
         margin: 0;
         padding: 0;
@@ -189,21 +189,20 @@
             {
                 justify-self: start;
                 align-self: center;
-                margin-left: 3vw;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                align-items: center;
     
                 img 
                 {
-                    width: 5vw;
-                    height: 15vh;
+            
+                    height: 10vh;
                 }
                 
                 p
                 {
-                    font-size: 1.03em;
-                    align-self: center;
-                    padding-left: 2.9vw;
+                    font-size: 1em;
+                    text-align: center;
                     font-style: italic;
                     font-weight: bold;
                     font-family: 'Roboto Mono', monospace;
@@ -221,9 +220,8 @@
             {
                 align-self: center;
                 justify-self: center;
-                padding-left: 4em;
-                padding-right: 4em;
-                margin-left: -2vw;
+                padding-left: 2em;
+                padding-right: 2em;
                 border-left: 2px solid #313193;
                 border-right: 2px solid #313193;
                 height: 80%;
@@ -247,9 +245,8 @@
                 li 
                 {
                     display: inline-block;
-                    padding-left: 3vw;
-                    padding-right: 3vw;
-                    margin-top: 5.5vh;
+                    padding-left: 2vw;
+                    margin-top: 7vh;
                     font-size: 1em;
                     font-family: 'Roboto Mono', monospace;
                     font-weight: bold;
@@ -264,6 +261,7 @@
     
             ul:last-of-type 
             {
+                margin-right: 4vw;
                 align-self: center;
                 height: 80%;
                 border-left: 2px solid #d2232a;
@@ -271,26 +269,26 @@
                 display: flex;
                 flex-direction: row;
                 justify-self: center;
-                margin-left: -3vw;
+                
                 
                 .a1
                 {
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     color: 	#4267B2;
                 }
                 
                 .a2
                 {
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     color: #1DA1F2;
                 }
                 
                 .a3
                 {
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     color: #F56040;
                 }
                 
@@ -321,7 +319,7 @@
                 li
                 {
                     align-self: center;
-                    padding: 3em;
+                    padding: 2.25em;
                 }
             }
         }
@@ -332,7 +330,7 @@
 {
     .header1
     {
-        height: 17vh;
+        height: 25vh;
         width: 100vw;
         margin: 0;
         padding: 0;
@@ -354,21 +352,20 @@
             {
                 justify-self: start;
                 align-self: center;
-                margin-left: 3vw;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                align-items: center;
     
                 img 
                 {
-                    width: 5vw;
-                    height: 15vh;
+            
+                    height: 10vh;
                 }
                 
                 p
                 {
-                    font-size: 1.03em;
-                    align-self: center;
-                    padding-left: 2.9vw;
+                    font-size: 1em;
+                    text-align: center;
                     font-style: italic;
                     font-weight: bold;
                     font-family: 'Roboto Mono', monospace;
@@ -386,9 +383,9 @@
             {
                 align-self: center;
                 justify-self: center;
-                padding-left: 4em;
-                padding-right: 4em;
-                margin-left: -2vw;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                text-align: center;
                 border-left: 2px solid #313193;
                 border-right: 2px solid #313193;
                 height: 80%;
@@ -412,9 +409,8 @@
                 li 
                 {
                     display: inline-block;
-                    padding-left: 3vw;
-                    padding-right: 3vw;
-                    margin-top: 5.5vh;
+                    padding-left: 1.5vw;
+                    margin-top: 7vh;
                     font-size: 1em;
                     font-family: 'Roboto Mono', monospace;
                     font-weight: bold;
@@ -429,6 +425,7 @@
     
             ul:last-of-type 
             {
+                margin-right: 4vw;
                 align-self: center;
                 height: 80%;
                 border-left: 2px solid #d2232a;
@@ -436,26 +433,26 @@
                 display: flex;
                 flex-direction: row;
                 justify-self: center;
-                margin-left: -3vw;
+                
                 
                 .a1
                 {
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     color: 	#4267B2;
                 }
                 
                 .a2
                 {
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     color: #1DA1F2;
                 }
                 
                 .a3
                 {
                     text-decoration: none;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     color: #F56040;
                 }
                 
@@ -486,7 +483,7 @@
                 li
                 {
                     align-self: center;
-                    padding: 3em;
+                    padding: 2.25em;
                 }
             }
         }
@@ -526,13 +523,13 @@
     
                 img 
                 {
-                    height: 15vh;
+                    height: 10vh;
                     margin-bottom: 1vh;
                 }
                 
                 p
                 {
-                    font-size: 1.5em;
+                    font-size: 1em;
                     align-self: center;
                     font-style: italic;
                     font-weight: bold;
