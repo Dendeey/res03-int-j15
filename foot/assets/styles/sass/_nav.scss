@@ -497,7 +497,7 @@
 {
     .header1
     {
-        height: 17vh;
+        height: 60vh;
         width: 100vw;
         margin: 0;
         padding: 0;
@@ -513,27 +513,28 @@
             width: 100%;
             height: 100%;
             display: grid;
-            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 2fr 0.5fr;
     
             figure 
             {
                 justify-self: start;
                 align-self: center;
-                margin-left: 3vw;
+                width: 100%;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                align-items: center;
     
                 img 
                 {
-                    width: 5vw;
+                    width: 13vw;
                     height: 15vh;
+                    margin-bottom: 1vh;
                 }
                 
                 p
                 {
-                    font-size: 0.8em;
+                    font-size: 1.5em;
                     align-self: center;
-                    padding-left: 2.5vw;
                     font-style: italic;
                     font-weight: bold;
                     font-family: 'Roboto Mono', monospace;
@@ -551,12 +552,8 @@
             {
                 align-self: center;
                 justify-self: center;
-                padding-left: 3em;
-                padding-right: 3em;
-                border-left: 2px solid #313193;
-                border-right: 2px solid #313193;
-                height: 80%;
-                
+                display: flex;
+                flex-direction: column;
                 
                 a
                 {
@@ -568,7 +565,7 @@
                 {
                     color: white;
                     background-color: #313193;
-                    padding: 2em 1em 2em 1em;
+                    padding: 0.8em;
                     
                     
                 }
@@ -576,17 +573,15 @@
                 li 
                 {
                     display: inline-block;
-                    padding-left: 2.5vw;
-                    padding-right: 2.5vw;
-                    margin-top: 5.5vh;
-                    font-size: 1.2em;
+                    margin: 1em;
+                    font-size: 1.5em;
                     font-family: 'Roboto Mono', monospace;
                     font-weight: bold;
                     
                     
                     span
                     {
-                        padding-right: 1vw;
+                        padding-right: 5vw;
                     }
                 }
             }
@@ -595,31 +590,29 @@
             {
                 align-self: center;
                 height: 80%;
-                border-left: 2px solid #d2232a;
-                border-right: 2px solid #d2232a;
                 display: flex;
                 flex-direction: row;
                 justify-self: center;
-                margin-left: -3vw;
+                
                 
                 .a1
                 {
                     text-decoration: none;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     color: 	#4267B2;
                 }
                 
                 .a2
                 {
                     text-decoration: none;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     color: #1DA1F2;
                 }
                 
                 .a3
                 {
                     text-decoration: none;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     color: #F56040;
                 }
                 
@@ -650,7 +643,7 @@
                 li
                 {
                     align-self: center;
-                    padding: 2.5em;
+                    padding: 3em;
                 }
             }
         }
