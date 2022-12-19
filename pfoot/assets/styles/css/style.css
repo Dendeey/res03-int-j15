@@ -2573,6 +2573,1936 @@ table {
     height: 10vh;
   }
 }
+.darkfoot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #313193;
+  width: 100vw;
+}
+.darkfoot > section:first-of-type {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.darkfoot > section:nth-of-type(2) {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 0.8fr 0.8fr 0.2fr;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.darkfoot > section:nth-of-type(2) .a1 {
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+}
+.darkfoot > section:nth-of-type(2) .a2 {
+  text-decoration: none;
+  font-size: 2em;
+  color: #1DA1F2;
+}
+.darkfoot > section:nth-of-type(2) .a3 {
+  text-decoration: none;
+  font-size: 2em;
+  color: #F56040;
+}
+.darkfoot > section:nth-of-type(2) .a1:hover {
+  background-color: #4267B2;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.darkfoot > section:nth-of-type(2) .a2:hover {
+  background: #1DA1F2;
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.darkfoot > section:nth-of-type(2) .a3:hover {
+  background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  color: white;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.darkfoot > section:nth-of-type(2) ul li {
+  display: inline-block;
+}
+.darkfoot > section:nth-of-type(2) h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.darkfoot > section:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3/4;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  html #compo {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  html #compo main {
+    font-family: "Garamond", serif;
+  }
+  html #compo main > section:first-of-type {
+    width: 100%;
+  }
+  html #compo main > section:first-of-type h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #d2232a;
+  }
+  html #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    height: 80%;
+  }
+  html #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  html #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  html #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  html #compo main > section:first-of-type > figure {
+    margin-top: 50px;
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > figure > img {
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr repeat(5, 1fr);
+    margin-bottom: 50px;
+    width: 100vw;
+    height: 1000vh;
+  }
+  html #compo main > section:last-of-type h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: #313193;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #photo {
+    width: 45vw;
+  }
+  html #compo main > section:last-of-type #gardien {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #gardien > h3 {
+    grid-row: 1/2;
+    margin-bottom: 50px;
+  }
+  html #compo main > section:last-of-type #gardien > article {
+    background-color: #313193;
+    text-align: center;
+    width: 50vw;
+    justify-self: center;
+  }
+  html #compo main > section:last-of-type #gardien > article > header {
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #gardien > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #gardien > article > footer {
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    width: 100vw;
+  }
+  html #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1194px) {
+  html {
+    font-size: 14px;
+  }
+  html #compo {
+    width: 100vw;
+  }
+  html #compo main {
+    font-family: "Garamond", serif;
+  }
+  html #compo main > section:first-of-type {
+    width: 100%;
+  }
+  html #compo main > section:first-of-type h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #d2232a;
+  }
+  html #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    height: 80%;
+  }
+  html #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  html #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  html #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  html #compo main > section:first-of-type > figure {
+    width: 100vw;
+    margin-top: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  html #compo main > section:last-of-type h2 {
+    color: #313193;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  html #compo main > section:last-of-type #photo {
+    height: 450px;
+  }
+  html #compo main > section:last-of-type #gardien {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #gardien > h3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #gardien > article {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #gardien > article > header h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #gardien > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    margin-bottom: 650px;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  html #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: -550px;
+    margin-bottom: 800px;
+  }
+  html #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    margin-bottom: 800px;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 3/4;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1194px) {
+  html {
+    font-size: 14px;
+  }
+  html #compo {
+    width: 100vw;
+  }
+  html #compo main {
+    font-family: "Garamond", serif;
+  }
+  html #compo main > section:first-of-type {
+    width: 100%;
+  }
+  html #compo main > section:first-of-type h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #d2232a;
+  }
+  html #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  html #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-left: -2vw;
+    border-left: 2px solid #313193;
+    border-right: 2px solid #313193;
+    height: 80%;
+  }
+  html #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  html #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  html #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  html #compo main > section:first-of-type > figure {
+    margin-top: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  html #compo main > section:last-of-type h2 {
+    color: #313193;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  html #compo main > section:last-of-type #photo {
+    height: 450px;
+  }
+  html #compo main > section:last-of-type #gardien {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #gardien > h3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #gardien > article {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #gardien > article > header h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #gardien > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+    text-align: center;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  html #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  html #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  html #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+}
 html {
   font-size: 14px;
   scroll-behavior: smooth;
