@@ -149,9 +149,7 @@ table {
   .header1 nav ul:last-of-type .a3 {
     text-decoration: none;
     font-size: 1.5em;
-    background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #F56040;
   }
   .header1 nav ul:last-of-type .a1:hover {
     background-color: #4267B2;
@@ -160,12 +158,13 @@ table {
     border-radius: 2em;
   }
   .header1 nav ul:last-of-type .a2:hover {
-    background-color: #1DA1F2;
+    background: #1DA1F2;
     color: white;
     padding: 0.5em;
     border-radius: 2em;
   }
   .header1 nav ul:last-of-type .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
     color: white;
     padding: 0.5em;
     border-radius: 2em;
@@ -177,7 +176,7 @@ table {
 }
 @media (min-width: 901px) and (max-width: 1366px) {
   .header1 {
-    height: 18vh;
+    height: 17vh;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -195,21 +194,37 @@ table {
     grid-template-columns: 1fr 3fr 1fr;
   }
   .header1 nav figure {
-    justify-self: center;
+    justify-self: start;
     align-self: center;
-    margin-left: 0;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: row;
   }
   .header1 nav figure img {
-    width: 6vw;
-    height: 17vh;
+    width: 5vw;
+    height: 15vh;
+  }
+  .header1 nav figure p {
+    font-size: 0.8em;
+    align-self: center;
+    padding-left: 2.5vw;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Roboto Mono", monospace;
+    line-height: 1.8em;
+    color: #313193;
+  }
+  .header1 nav figure p strong {
+    color: #d2232a;
   }
   .header1 nav ul:first-of-type {
     align-self: center;
     justify-self: center;
+    padding-left: 3em;
+    padding-right: 3em;
     border-left: 2px solid #313193;
     border-right: 2px solid #313193;
     height: 80%;
-    margin-left: -5vw;
   }
   .header1 nav ul:first-of-type a {
     text-decoration: none;
@@ -218,49 +233,66 @@ table {
   .header1 nav ul:first-of-type a:hover {
     color: white;
     background-color: #313193;
-    padding: 1.8em 1em 1.8em 1em;
+    padding: 2em 1em 2em 1em;
   }
   .header1 nav ul:first-of-type li {
     display: inline-block;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     margin-top: 5.5vh;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-family: "Roboto Mono", monospace;
     font-weight: bold;
   }
+  .header1 nav ul:first-of-type li span {
+    padding-right: 1vw;
+  }
   .header1 nav ul:last-of-type {
     align-self: center;
-    margin-right: 5vw;
-    padding-right: 1em;
-    padding-left: 1em;
     height: 80%;
     border-left: 2px solid #d2232a;
     border-right: 2px solid #d2232a;
     display: flex;
     flex-direction: row;
     justify-self: center;
+    margin-left: -3vw;
   }
   .header1 nav ul:last-of-type .a1 {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #4267B2;
   }
   .header1 nav ul:last-of-type .a2 {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #1DA1F2;
   }
   .header1 nav ul:last-of-type .a3 {
     text-decoration: none;
-    font-size: 1.3em;
-    background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 1.2em;
+    color: #F56040;
+  }
+  .header1 nav ul:last-of-type .a1:hover {
+    background-color: #4267B2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  .header1 nav ul:last-of-type .a2:hover {
+    background: #1DA1F2;
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
+  }
+  .header1 nav ul:last-of-type .a3:hover {
+    background: linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    color: white;
+    padding: 0.5em;
+    border-radius: 2em;
   }
   .header1 nav ul:last-of-type li {
     align-self: center;
-    padding: 1.5em;
+    padding: 2.5em;
   }
 }
 .darkfoot {
@@ -304,169 +336,1235 @@ table {
   color: #fff;
 }
 
-#compo {
-  width: 100vw;
+@media (min-width: 768px) and (max-width: 1194px) {
+  #compo {
+    width: 100vw;
+  }
+  #compo main {
+    font-family: "Garamond", serif;
+  }
+  #compo main > section:first-of-type {
+    width: 100%;
+  }
+  #compo main > section:first-of-type h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #d2232a;
+  }
+  #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-left: -2vw;
+    border-left: 2px solid #313193;
+    border-right: 2px solid #313193;
+    height: 80%;
+  }
+  #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  #compo main > section:first-of-type > figure {
+    margin-top: 50px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  #compo main > section:last-of-type h2 {
+    color: #313193;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  #compo main > section:last-of-type #photo {
+    height: 450px;
+  }
+  #compo main > section:last-of-type #gardien {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 1fr;
+  }
+  #compo main > section:last-of-type #gardien > h3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type #gardien > article {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #gardien > article > header h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #gardien > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+  }
+  #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: -550px;
+    margin-bottom: 800px;
+  }
+  #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    margin-bottom: 800px;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 3/4;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
 }
-#compo main {
-  font-family: "Garamond", serif;
-}
-#compo main > section:first-of-type {
-  width: 100%;
-}
-#compo main > section:first-of-type h1 {
-  font-size: 3em;
-  font-weight: 800;
-  margin-top: 50px;
-  margin-left: 40px;
-  color: #d2232a;
-}
-#compo main > section:first-of-type > nav {
-  text-align: center;
-}
-#compo main > section:first-of-type > nav ul {
-  align-self: center;
-  justify-self: center;
-  padding-left: 4em;
-  padding-right: 4em;
-  margin-left: -2vw;
-  border-left: 2px solid #313193;
-  border-right: 2px solid #313193;
-  height: 80%;
-}
-#compo main > section:first-of-type > nav ul a {
-  text-decoration: none;
-  color: #313193;
-}
-#compo main > section:first-of-type > nav ul a:hover {
-  color: white;
-  background-color: #313193;
-  padding: 1em 1em 1em 1em;
-}
-#compo main > section:first-of-type > nav ul li {
-  display: inline-block;
-  padding-left: 3vw;
-  padding-right: 3vw;
-  margin-top: 5.5vh;
-  font-size: 1.5em;
-  font-family: "Roboto Mono", monospace;
-  font-weight: bold;
-}
-#compo main > section:first-of-type > figure {
-  margin-top: 50px;
-  text-align: center;
-}
-#compo main > section:last-of-type {
-  display: grid;
-  grid-template-rows: 0.1fr 0.5fr repeat(4, 2fr) 1fr;
-}
-#compo main > section:last-of-type h2 {
-  color: #313193;
-  font-size: 2.5em;
-  font-weight: 600;
-  margin-top: 50px;
-  margin-left: 300px;
-}
-#compo main > section:last-of-type h3 {
-  color: #d2232a;
-  font-size: 2.5em;
-  font-weight: 600;
-  text-decoration: underline;
-}
-#compo main > section:last-of-type #photo {
-  height: 450px;
-}
-#compo main > section:last-of-type #gardien {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 0.1fr 0.5fr;
-}
-#compo main > section:last-of-type #gardien > h3 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-#compo main > section:last-of-type #gardien > article {
-  grid-column: 4/5;
-  grid-row: 2/3;
-  text-align: center;
-  background-color: #313193;
-}
-#compo main > section:last-of-type #gardien > article > header h4 {
-  margin: 20px 0 20px 0;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: 600;
-}
-#compo main > section:last-of-type #gardien > article > main {
-  margin: 20px 0 20px 0;
-  background-color: #313193;
-  color: #ffffff;
-  font-size: 1.2em;
-}
-#compo main > section:last-of-type #gardien > article > footer {
-  background-color: #313193;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-size: 1.2em;
-}
-#compo main > section:last-of-type #defenseurs {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.1fr 0.5fr;
-}
-#compo main > section:last-of-type #defenseurs > h3 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-#compo main > section:last-of-type #defenseurs > article:first-of-type {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  text-align: center;
-  background-color: #313193;
-}
-#compo main > section:last-of-type #defenseurs > article:first-of-type > header h4 {
-  margin: 20px 0 20px 0;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: 600;
-}
-#compo main > section:last-of-type #defenseurs > article:first-of-type > main {
-  margin: 20px 0 20px 0;
-  background-color: #313193;
-  color: #ffffff;
-  font-size: 1.2em;
-}
-#compo main > section:last-of-type #defenseurs > article:first-of-type > footer {
-  background-color: #313193;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-size: 1.2em;
-}
-#compo main > section:last-of-type #defenseurs > article:nth-of-type(2) {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  text-align: center;
-  background-color: #313193;
-}
-#compo main > section:last-of-type #defenseurs > article:nth-of-type(2) > header h4 {
-  margin: 20px 0 20px 0;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: 600;
-}
-#compo main > section:last-of-type #defenseurs > article:nth-of-type(2) > main {
-  margin: 20px 0 20px 0;
-  background-color: #313193;
-  color: #ffffff;
-  font-size: 1.2em;
-}
-#compo main > section:last-of-type #defenseurs > article:nth-of-type(2) > footer {
-  background-color: #313193;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-size: 1.2em;
+@media (min-width: 1194px) {
+  #compo {
+    width: 100vw;
+  }
+  #compo main {
+    font-family: "Garamond", serif;
+  }
+  #compo main > section:first-of-type {
+    width: 100%;
+  }
+  #compo main > section:first-of-type h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #d2232a;
+  }
+  #compo main > section:first-of-type > nav {
+    text-align: center;
+  }
+  #compo main > section:first-of-type > nav ul {
+    align-self: center;
+    justify-self: center;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-left: -2vw;
+    border-left: 2px solid #313193;
+    border-right: 2px solid #313193;
+    height: 80%;
+  }
+  #compo main > section:first-of-type > nav ul a {
+    text-decoration: none;
+    color: #313193;
+  }
+  #compo main > section:first-of-type > nav ul a:hover {
+    color: white;
+    background-color: #313193;
+    padding: 1em 1em 1em 1em;
+  }
+  #compo main > section:first-of-type > nav ul li {
+    display: inline-block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-top: 5.5vh;
+    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+  }
+  #compo main > section:first-of-type > figure {
+    margin-top: 50px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr repeat(5, 1fr);
+    margin-bottom: 50px;
+  }
+  #compo main > section:last-of-type h2 {
+    color: #313193;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type h3 {
+    color: #d2232a;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  #compo main > section:last-of-type #photo {
+    height: 450px;
+  }
+  #compo main > section:last-of-type #gardien {
+    margin: 50px 150px 0 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  #compo main > section:last-of-type #gardien > h3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type #gardien > article {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #gardien > article > header h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #gardien > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #gardien > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  #compo main > section:last-of-type #stoppeurs > h3 {
+    grid-row: 1/2;
+    margin: 100px 0 50px;
+    text-align: center;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #stoppeurs > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  #compo main > section:last-of-type #milieux > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #milieux > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #milieux > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  #compo main > section:last-of-type #attaquants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #attaquants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:nth-of-type(3) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type {
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #attaquants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants {
+    margin: 0 150px 0 150px;
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  #compo main > section:last-of-type #remplacants > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #remplacants > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:nth-of-type(2) > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #remplacants > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr;
+  }
+  #compo main > section:last-of-type #staff > h3 {
+    grid-row: 1/2;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  #compo main > section:last-of-type #staff > ul {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff > ul > li:first-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    text-align: center;
+    background-color: #313193;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type > article > header > h4 {
+    margin: 20px 0 20px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type > article > main {
+    margin: 20px 0 20px 0;
+    background-color: #313193;
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  #compo main > section:last-of-type #staff > ul > li:last-of-type > article > footer {
+    background-color: #313193;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

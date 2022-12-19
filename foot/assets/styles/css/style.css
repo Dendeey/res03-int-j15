@@ -427,6 +427,7 @@ body > main > section:nth-of-type(2) article ul {
   grid-column: 2/3;
 }
 body > main > section:nth-of-type(2) article ul header {
+  border-radius: 10px 10px 0 0;
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
   margin-top: 2em;
@@ -449,41 +450,31 @@ body > main > section:nth-of-type(2) article ul header ul span {
   padding-right: 2vw;
   padding-left: 2vw;
 }
-body > main > section:nth-of-type(2) article ul li article {
+body > main > section:nth-of-type(2) article ul > .firstLi article {
   background-color: #CFCFCF;
+  border-radius: 0 0 10px 10px;
   display: grid;
   grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
   height: 20vh;
 }
-body > main > section:nth-of-type(2) article ul li article figure {
+body > main > section:nth-of-type(2) article ul > .firstLi article figure {
   align-self: center;
   justify-self: center;
 }
-body > main > section:nth-of-type(2) article ul li article figure img {
+body > main > section:nth-of-type(2) article ul > .firstLi article figure img {
   width: 5vw;
   height: 12vh;
 }
-body > main > section:nth-of-type(2) article ul li article figure p {
+body > main > section:nth-of-type(2) article ul > .firstLi article figure p {
   font-size: 1.2em;
   font-weight: 600;
   text-align: center;
   color: black;
   margin-top: 1.5vh;
 }
-body > main > section:nth-of-type(2) article ul li article > p:first-of-type {
+body > main > section:nth-of-type(2) article ul > .firstLi article > p:first-of-type {
   font-size: 3em;
-  font-weight: 400;
-  text-align: center;
-  color: #13671B;
-  justify-self: center;
-  align-self: center;
-  background-color: white;
-  border-radius: 4px;
-  padding: 0.2em;
-}
-body > main > section:nth-of-type(2) article ul li article > p:last-of-type {
-  font-size: 3em;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   color: #B20A0A;
   justify-self: center;
@@ -491,27 +482,112 @@ body > main > section:nth-of-type(2) article ul li article > p:last-of-type {
   background-color: white;
   border-radius: 4px;
   padding: 0.2em;
+  font-family: "Roboto Condensed", sans-serif;
 }
-body > main > section:nth-of-type(2) article ul li article section {
+body > main > section:nth-of-type(2) article ul > .firstLi article > p:last-of-type {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  color: #13671B;
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.2em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body > main > section:nth-of-type(2) article ul > .firstLi article section {
   justify-self: center;
   align-self: center;
   display: flex;
   flex-direction: column;
   row-gap: 1vh;
 }
-body > main > section:nth-of-type(2) article ul li article section h4 {
+body > main > section:nth-of-type(2) article ul > .firstLi article section h4 {
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
   color: black;
 }
-body > main > section:nth-of-type(2) article ul li article section h5 {
+body > main > section:nth-of-type(2) article ul > .firstLi article section h5 {
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
   color: black;
 }
-body > main > section:nth-of-type(2) article ul li article section h6 {
+body > main > section:nth-of-type(2) article ul > .firstLi article section h6 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article {
+  margin-top: 2vh;
+  background-color: #CFCFCF;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 0.2fr 1fr 0.2fr 0.5fr;
+  height: 20vh;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article figure {
+  align-self: center;
+  justify-self: center;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article figure img {
+  width: 5vw;
+  height: 12vh;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article figure p {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  margin-top: 1.5vh;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article > p:first-of-type {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  color: #B20A0A;
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.2em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article > p:last-of-type {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+  color: #13671B;
+  justify-self: center;
+  align-self: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.2em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article section {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article section h4 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article section h5 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+}
+body > main > section:nth-of-type(2) article ul > .secondLi article section h6 {
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
